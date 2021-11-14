@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--________________ Army worm _________________-->
+
+    <string name="name_aw">
+        Army Worm
+    </string>
+    <string name="sci_name_aw">
+        Spodoptera frugiperda
+    </string>
+    <string name="desc_aw">
+        Caterpillars grow to about 2 inches long and are marked with green, brown or black colors arranged in stripes, with darker stripes along the sides.
+        The top of each abdominal segment is marked with two pairs of black dots from which stiff hairs arise. The front of the dark head capsule is marked
+        with a pale colored upside-down “Y.” Adult moths have dark gray mottled forewings marked with light and dark areas. Wings are held over the back of the
+        body when at rest. Outstretched, wings measure about 1 ½ inches from tip to tip. The hind wings are white.
+    </string>
+    <string name="damage_aw">
+        Armyworm feeding gives corn a ragged appearance, with defoliation occurring from the leaf edge toward 
+        the midrib. Damage may be so extensive that most of the plant, except leaf midribs and the stalk, is consumed. 
+        Such a highly damaged plant may recover, however, if the growing point has not been destroyed.
+    </string>
+    <string name="mgmt_aw">
+        Control actions in corn are recommended when armyworms average between 1/2 and 3/4 inches and the entire
+        field averages 35% infested plants or 50% or more defoliation is seen on damaged plants. Pheromone traps are
+        available to monitor adult armyworm activity.
+    </string>
+
+    <!--________________ Corn aphid _________________-->
+
+    <string name="name_ca">
+        Corn Aphid
+    </string>
+    <string name="sci_name_ca">
+        Rhopalosiphum maidis
+    </string>
+    <string name="desc_ca">
+        The corn leaf aphid is a blue-green or gray, soft-bodied, spherical insect about the size of a pinhead [1/16 inch (1.6 mm) in length].
+        Female corn leaf aphids do not lay eggs, as do most other insects, but give birth to living young. Most corn leaf aphids are wingless.
+        However, as populations increase, some develop delicate, filmy wings. These wings enable them to fly to uninfested plants to start new colonies.
+    </string>
+    <string name="damage_ca">
+        Heavily infested corn leaves may wilt, curl, and show yellow patches of discoloration. When tassels and silks are covered with honeydew,
+        the pollination process may be disrupted. Also, excessive aphid feeding within the whorl prior to tassel emergence appears to be directly
+        related to incomplete kernel development and/or barren ears.
+    </string>
+    <string name="mgmt_ca">
+        Prior to Tasseling - Corn leaf aphid control is most effective 2 to 3 weeks prior to tasseling. It is rarely advisable after this period.During
+
+        Pollen Shed - Although control is not normally required once the tassels have emerged, on occasion aphids may interfere with pollination and treatment
+        may be warranted.
+    </string>
+
+    <!--________________ Corn borer _________________-->
+    <string name="name_cb">
+        Corn Borer
+    </string>
+    <string name="sci_name_cb">
+        Ostrinia nubilalis
+    </string>
+    <string name="desc_cb">
+        Small caterpillars with dark heads and faint dark spots on their bodies tunnel into the main stalks of young corn plants, and then move to the silks and ears as
+        the plant matures. The most common sign that borers are present are round holes that have been chewed into corn stalks, usually when the corn is more than waist high.
+        Corn borers are the larvae of a beige moth
+    </string>
+    <string name="damage_cb">
+        Corn borer feeding weakens plants and slows their growth. Severely damaged plants often snap off and fall over. When mature corn ears are damaged, they are prone to rot.
+    </string>
+    <string name="mgmt_cb">
+        Spraying grasses with a "burn down" herbicide and a residual insecticide before planting forces borers to move quickly over a shorter period of time, exposing them to a
+        higher concentration of insecticide. This technique can be used in no-till fields that have had a history of common stalk borer problems.
+    </string>
+
+    <!--________________ Flea beetle _________________-->
+    <string name="name_fb">
+        Flea Beetle
+    </string>
+    <string name="sci_name_fb">
+        Chaetocnema pulicaria
+    </string>
+    <string name="desc_fb">
+        Corn flea beetles are small, shiny, black beetles, approximately 1/16-inch long, with enlarged hind legs. Adults are easily disturbed and are known for their ability to jump long
+        distances. The larvae are small, white, and not very active. Full-grown larvae are 1/6-inch long and most body segments are non- pigmented. Only the prothorax and the last abdominal
+        segment are slightly darkened.
+    </string>
+    <string name="damage_fb">
+        Little is known about damage caused by the larvae, but damage by the adults is very evident. The adult corn flea beetle injures corn plants by removing leaf tissue and by transmitting
+        pathogenic bacteria.Injury by the adults appears as scratches in the upper and lower surfaces of the leaf, usually parallel to the veins. They feed on both the upper and the lower
+        epidermis of corn leaves, but they do not chew completely through the leaves. The scratches, or windowpane effect, rarely result in economic injury. High densities and heavy feeding
+        can result in the skeletonization of leaves and death of seedling. The leaves of severely injured plants appear whitish or silvery.
+    </string>
+    <string name="mgmt_fb">
+        Control may be justified in commercial corn when there is an average of five or more beetles per plant prior to the 4-leaf stage. If the infestation is so severe that some plants are being
+        killed, or if more than half the leaves are whitish, it may be profitable to treat.
+    </string>
+
+    <!--________________ White grub _________________-->
+    <string name="name_wg">
+        White Grub
+    </string>
+    <string name="sci_name_wg">
+        Holotrichia serrata
+    </string>
+    <string name="desc_wg">
+        The grubs, 1/4 to over 1 inch (6-25 mm) long, are white with brown heads and have six prominent legs. Their bodies typically are curved into a "C"-shape.
+    </string>
+    <string name="damage_wg">
+       White grubs live underground and feed on plant roots. Feeding may cause stunting, nutritional deficiencies and stand loss. Corn with severely pruned roots appear stunted
+        and easy to uproot. The larvae, particularly older grubs, can feed aggressively and easily move from root to root within the row.
+    </string>
+    <string name="mgmt_wg">
+        Two or more live white grubs per cubic foot of soil prior to planting may signal a potential problem. White grub problems have been noted in fields where corn follows soybean, fields previously in
+        hay or pasture, or fields which had a late season weed problem the previous year. Such fields should be closely watched during tillage operations for the presence of grubs. Bird activity in freshly
+        worked fields could signal the presence of grubs. Serious economic damage is rare occurrence and typically occurs when large
+        populations of grubs are present
+    </string>
+
+    <!--________________ Wire worm _________________-->
+    <string name="name_ww">
+        Wireworm
+    </string>
+    <string name="sci_name_ww">
+        Melanotus communis Gyllenhal
+    </string>
+    <string name="desc_ww">
+        Wireworms are slender, hard-bodied, wire-like larvae that can damage young corn plants. They are shiny yellow to brown in color and range in size from 1/2 to 1-1/2 inches (13 to 38 mm) long.
+        Since the life cycle of certain wireworm species may last from 4 to 7 years, larvae may damage several successive crops.
+
+        Adult wireworms are called click beetles. Their name comes from the clicking sound they make while attempting to right themselves after falling or being placed on their backs.
+        Several species of wireworm larvae damage cereal and forage crops while feeding on underground portions of plants.
+
+    </string>
+    <string name="damage_ww">
+        Wireworm larvae may feed on the germ of corn kernels or completely hollow out the seeds, leaving only the seed coat. This damage results in gaps in the rows. Wireworms may also cut off
+        small roots or tunnel into the underground portions of the root or stem of young corn plants. These plants will appear stunted or wilted with the whorl leaves wilting first.
+
+        Wireworm damage occurs mainly during the early stages of plant growth. Damage commonly occurs when corn is planted early and the weather turns cold, slowing seed germination.
+        Wireworm infestations are usually noted in areas of a field that stay moist for long periods of time. As soil temperatures warm, wireworms move deeper in the soil profile,
+        eventually to where they are no longer a threat to the growing corn.
+    </string>
+    <string name="mgmt_ww">
+        Several insecticides are labeled for wireworm control and can be used as pre-plant or planting-time applications. Control may be highly variable. It may also help to use a seed treatment,
+        if low populations are noted. No insecticides are available to be applied as rescue treatments. If a field is replanted due to wireworms and the wireworms are still present and actively feeding,
+        use a soil insecticide and/or a seed treatment depending on the wireworm population.
+    </string>
+</resources>

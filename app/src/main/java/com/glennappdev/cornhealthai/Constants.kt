@@ -19,12 +19,12 @@ class Constants {
         )
 
         val INSECT_PEST = arrayListOf(
-            "Army Worm",
-            "Corn Aphid",
-            "Corn Borer",
-            "Flea Beetle",
-            "White Grub",
-            "Wire Worm"
+            "Army worm",
+            "Corn aphid",
+            "Corn borer",
+            "Flea beetle",
+            "White grub",
+            "Wire worm"
         )
         val INSECT_PEST_SCIENTIFIC_NAMES = arrayListOf(
             "Spodoptera frugiperda",

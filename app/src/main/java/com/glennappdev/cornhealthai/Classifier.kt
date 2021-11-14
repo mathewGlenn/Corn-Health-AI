@@ -52,10 +52,22 @@ class Classifier(modelPath: String?) {
         return Max(maxIndex, maxValue)
     }
 
+    data class SecondMax(var argMax2: Int, var maxProbability2: Float)
+
+    fun secondHighest(inputs: MutableList<Float>): SecondMax {
+
+        val sorted = inputs
+        sorted.sortDescending()
+        val secHighest = sorted[1]
+        val secHighestIndex = inputs.indexOf(secHighest)
+        return SecondMax(secHighestIndex, secHighest)
+    }
+
     data class Prediction(
-        var predClass: String,
-        var predSciName: String,
-        var predProbability: String,
+        var predClass1: String,
+        var class1Prob: Float,
+        var predClass2: String,
+        var class2Prob: Float
     )
 
     fun predict(bitmap: Bitmap?, model: String?): Prediction {
@@ -63,20 +75,23 @@ class Classifier(modelPath: String?) {
         val inputs = IValue.from(tensor)
         val outputs = this.model.forward(inputs).toTensor()
         val scores = outputs.dataAsFloatArray
-        val (classIndex, maxValue) = argMax(softMax(scores))
+        val (class1Index, maxValue) = argMax(softMax(scores))
+        val (class2Index, secondMaxValue) = secondHighest(softMax(scores))
 
-        var predictedClass = ""
-        var classSciName = ""
-        val predictionProbability = "%.2f".format(maxValue * 100) + "%"
+        var predictedClass1 = ""
+        val class1Prob = maxValue * 100
+
+        var predictedClass2 = ""
+        val class2Prob = secondMaxValue * 100
 
         if (model == "insect_pest") {
-            predictedClass = Constants.INSECT_PEST[classIndex]
-            classSciName = Constants.INSECT_PEST_SCIENTIFIC_NAMES[classIndex]
+            predictedClass1 = Constants.INSECT_PEST[class1Index]
+            predictedClass2 = Constants.INSECT_PEST[class2Index]
         } else if (model == "leaf_disease") {
-            predictedClass = Constants.LEAF_DISEASES[classIndex]
-            classSciName = Constants.LEAF_DISEASES_SCIENTIFIC_NAMES[classIndex]
+            predictedClass1 = Constants.LEAF_DISEASES[class1Index]
+            predictedClass2 = Constants.LEAF_DISEASES[class2Index]
         }
-        return Prediction(predictedClass, classSciName, predictionProbability)
+        return Prediction(predictedClass1, class1Prob, predictedClass2, class2Prob)
     }
 
 }

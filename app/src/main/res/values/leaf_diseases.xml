@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ...................................Gray Leaf Spot................................... -->
+
+    <string name="name_gls">
+        Gray Leaf Spot
+    </string>
+
+    <string name="cause_gls">
+        Fungus Cercospora zeae-maydis
+    </string>
+
+    <string name="desc_gls">
+        Gray leaf spot is favored by wet humid weather. Additionally, it is favored in situations with reduced tillage
+        and continuous corn. Airborne spores are spread locally and regionally from corn debris.
+    </string>
+
+    <string name="symptoms_gls">
+        The symptoms of gray leaf spot are Usually first noticed in the lower leaves. Initially, lesions of gray leaf
+        spot begin as a small dot with a yellow halo. Lesions will elongate over time running parallel to the veins
+        becoming pale brown to gray and rectangular in shape with blunt ends. These lesions can be described as having the appearance of “matchstick.”
+        Leaves appear grayish in color due to the presence of fungal spores.
+    </string>
+
+    <string name="mgmt_gls">
+        Management of gray leaf spot include tillage, crop rotation and planting resistant hybrids. Fungicide may be needed to prevent significant loss when plants are infected early
+        and environmental conditions favor disease. Lesions may eventually coalesce killing the leaves.
+    </string>
+
+
+
+
+    <!-- ...................................Northern Corn Leaf Blight................................... -->
+
+    <string name="name_nlb">
+        Northern Corn Leaf Blight
+    </string>
+
+    <string name="cause_nlb">
+        Fungus Exerohilum turicum
+    </string>
+
+    <string name="desc_nlb">
+       If lesions begin early (before silking), crop loss can result. Late infections may have less of an impact on yield.
+        NLB is favored by wet humid cool weather.
+        Spores of the fungus that cause this disease can be transported by wind long distances from infected fields. Spread within and between fields locally also relies on wind blown spores.
+    </string>
+
+    <string name="symptoms_nlb">
+        The tan lesions of northern corn leaf blight are slender and oblong tapering at the ends ranging in size between 1-6 inches.
+        Lesions run parallel to the leaf margins beginning on the lower leaves and moving up the plant. They may coalesce and cover the entire leaf.
+        Spores are produced on the underside of the leaf below the lesions giving the appearance of a dusty green fuzz.
+    </string>
+
+    <string name="mgmt_nlb">
+       Northern corn leaf blight can be managed through the use of resistant hybrids. Additionally, timely planting can be useful for avoiding conditions that favor the disease
+    </string>
+
+
+
+
+    <!-- ...................................Common Rust................................... -->
+    <string name="name_cr">
+        Common Rust
+    </string>
+
+    <string name="cause_cr">
+        Fungus Puccinia sorghi
+    </string>
+
+    <string name="desc_cr">
+       Late occurring infections have limited impact on yield.
+        Disease development is favored by cool, moist weather (60 – 70 o F)
+    </string>
+
+    <string name="symptoms_cr">
+       Symptoms of common rust often appear after silking. Small, round to elongate brown pustules form on both leaf surfaces and other above ground parts of the plant.
+        As the pustules mature they become brown to black.
+        If disease is severe, the leaves may yellow and die early.
+    </string>
+
+    <string name="mgmt_cr">
+      The use of resistant hybrids is the primary management strategy for the control of common rust.
+      Timely planting of corn early during the growing season may help to avoid high inoculum levels or environmental conditions that would promote disease development.
+    </string>
+
+</resources>

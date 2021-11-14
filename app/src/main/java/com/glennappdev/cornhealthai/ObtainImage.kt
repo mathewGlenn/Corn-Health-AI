@@ -11,12 +11,14 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.view.View
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.FileProvider
 import com.glennappdev.cornhealthai.databinding.ActivityObtainImageBinding
+import com.jaeger.library.StatusBarUtil
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
@@ -25,7 +27,7 @@ import java.io.OutputStream
 class ObtainImage : AppCompatActivity() {
 
     private lateinit var classifier: Classifier
-    lateinit var mutableBitmap : Bitmap
+    lateinit var mutableBitmap: Bitmap
 
     val APP_TAG = "crop"
     var intermediateName = "1.jpg"
@@ -42,6 +44,8 @@ class ObtainImage : AppCompatActivity() {
         val view: View = binding.root
         setContentView(view)
 
+        // transparent status bar using laobie/StatusBarUtil
+        StatusBarUtil.setTransparent(this)
 
         val utils = Utils()
         val intent = intent
@@ -90,7 +94,8 @@ class ObtainImage : AppCompatActivity() {
                 mutableBitmap = imgBitmap.copy(Bitmap.Config.ARGB_8888, true)
                 Constants.Image = mutableBitmap
 
-                val (class1, class1Prob, class2, class2Prob) = classifier.predict(mutableBitmap, model)
+                val (class1, class1Prob, class2, class2Prob) = classifier.predict(mutableBitmap,
+                    model)
                 val i = Intent(this, PredictionResult::class.java)
                 i.putExtra("class1Name", class1)
                 i.putExtra("class1Prob", class1Prob)
@@ -243,7 +248,7 @@ class ObtainImage : AppCompatActivity() {
         return Bitmap.createScaledBitmap(image, width, height, true)
     }
 
-    fun Cancel() {
+    fun cancel(view: android.view.View) {
         finish()
     }
 }

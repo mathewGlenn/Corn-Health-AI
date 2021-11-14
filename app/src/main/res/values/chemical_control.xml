@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="chem_control_gls">
+        If around 50% of corn plants in the field are showing symptoms of gray leaf spot
+        prior to tasseling, the plant is susceptible and can be controlled with fungicides.
+        Available fungicides that can be applied include products with active ingredient
+        CHLOROTHALONIL or PYRACLOSTROBIN.
+
+    </string>
+
+    <string name="chem_control_cr">
+        Common rust can be controlled with fungicides but the timing is extremely important. For the best
+        results, application should be done as soon as the symptoms are observed. This will prevent the disease
+        to spread on more healthy leaves. Available fungicides that can be applied include products with active ingredient
+        AZOXYSTROBIN, CHLOROTHALONIL, DIFENOCONAZOLE+PROPICONAZOLE, TEBUCONAZOLE, PYRACLOSTROBIN, TEBUCONAZOLE+TRIFLOXYSTROBIN.
+
+    </string>
+
+    <string name="chem_control_nlb">
+        The infection of northern leaf blight usually begins around the time of silking and this is the right time
+        to apply fungicide. Timely application can greatly minimize impact on yield. Application is only practical
+        if the disease is severe and widespread. Available fungicides that can be applied include products
+        with active ingredient DIFENOCONAZOLE+PROPICONAZOLE or MANCOZEB.
+
+    </string>
+
+    <string name="chem_control_aw">
+        If around 75% of the plant leaves in the field show feeding damage of army worm, pesticides can be economically
+        use to prevent further damage. The following pesticides are available to be applied: (E,Z) 9,11 TETRADECADIENYL ACETATE, AZADIRACHTIN,
+        CARBOSULFAN, CHLORFENAPYR, CHLORPYRIFOS, CYANTRANILIPROLE, INDOXACARB, NOVALURON+BIFENTHRIN, PYRIDALYL, or SPINETORAM.
+
+
+    </string>
+    <string name="chem_control_ca">
+        During the pollen-shedding of corn, the corn aphids may interfere with the process of pollen-shading if
+        the insects are abundant on the tassels due to their secretion of sticky honeydew. If the condition is severe, pesticides
+        can be applied to prevent further aphid invasion. The following pesticides are available to be applied:
+        DIAZINON, FIPRONIL, LAMBDA-CYHALOTHRIN, LAMBDACHYHALOTHRIN + THIAMETHOXA, MALATHION, PYMETROZINE, or CHLOTHIANIDIN
+
+    </string>
+    <string name="chem_control_cb">
+        The following pesticides are available to be applied to control corn borer: CARBARYL, CHLORANTRANILIPROLE,
+        CHLORPYRIFOS, CYPERMETHRIN, DELTAMETHRIN, DIAZINON, FIPRONIL, FLUBENDIAMIDE, INDOXACARB, LAMBDA-CYHALOTHRIN,
+        LAMBDACYHALOTHRIN+THIAMETHOXA, METHOMYL, or PHENTHOATE
+
+    </string>
+    <string name="chem_control_fb">
+        The following pesticides can be used to reduce or eliminate corn flea beetle feeding on corn leaves:
+        CARBARYL, PERMETHRIN, SPINOSAD, or BIFENTHRIN.
+
+
+    </string>
+    <string name="chem_control_wg">
+        To control white grub chemically, the following pesticides can be used:
+        CHLORPYRIFOS, CHLOTHIANIDIN, CHLORANTRANILIPROLE, IMIDACLOPRID,
+        THIAMETHOXAM, CARBARYL, or TRICHLORFON.
+
+    </string>
+    <string name="chem_control_ww">
+        The following pesticides can be used for wireworm control: BIFENTHRIN, CARBOFURAN, CHLORPYRIFOS, DIAZINON,
+        FIPRONIL, IMIDACLOROPID, PERMETHRIN, or TERBURFOS.
+
+    </string>
+
+    <string name="note_when_using_pesticide">
+        When using a pesticide, carefully follow the label instructions and safety precautions.
+    </string>
+    <string name="note_when_using_fungicide">
+        Strictly follow label directions when using a fungicide.
+    </string>
+</resources>

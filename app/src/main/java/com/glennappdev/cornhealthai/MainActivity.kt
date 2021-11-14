@@ -12,17 +12,17 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(
             layoutInflater
         )
-        val view : View = binding.root
+        val view: View = binding.root
         setContentView(view)
 
         binding.cardLeafDisease.setOnClickListener {
-            val intent = Intent(this, Predict::class.java)
-            intent.putExtra("flag", "leaf_disease")
+            val intent = Intent(this, ObtainImage::class.java)
+            intent.putExtra("model", "leaf_disease")
             startActivity(intent)
         }
         binding.cardInsectPest.setOnClickListener {
-            val intent = Intent(this, Predict::class.java)
-            intent.putExtra("flag", "insect_pest")
+            val intent = Intent(this, ObtainImage::class.java)
+            intent.putExtra("model", "insect_pest")
             startActivity(intent)
         }
 
