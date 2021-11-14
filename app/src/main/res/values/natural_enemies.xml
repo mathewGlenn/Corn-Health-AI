@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="natural_enemies_aw">
+            There are two known natural enemies that are effective in controlling army worms: parasitoid wasps and trichogramma wasps.
+            These wasps lay their eggs inside the eggs of moths such as the army worm. This prevents the eggs of army worms from
+            hatching into a caterpillar and it also breaks the lifecycle of the army worm, effectively preventing them
+            from reproducing.
+    </string>
+    <string name="natural_enemies_ca">
+        Many predators and parasites attack corn leaf aphids. Predators such as the lady bird beetles consume them. Several parasitic
+        wasps sting corn aphids and lay eggs inside their bodies and then these eggs will later hatch into parasitic larvae, consuming
+        the aphids from the inside.
+    </string>
+    <string name="natural_enemies_cb">
+        Among the predators that affects the larvae are the insidious flower bug; green lacewings; and several lady bird beetles.
+        One parasitic wasps that can destroy corn borers is the trichogramma. This wasp seeks out and lay their egg inside corn borer eggs.
+        The eggs of trichogramma would later hatch and destroy the corn borer eggs, preventing them from reproducing.
+    </string>
+    <string name="natural_enemies_fb">
+        Natural enemies of corn flea beetles include braconid wasps and tachinig flies. In both cases, the larval stage eats flea beetles,
+        while the adult stage feeds on nectar and pollen. Toads also eat flea beetles and their pupae.
+    </string>
+    <string name="natural_enemies_wg">
+        The primary predators of white grubs are birds. Spiders, mites, predatory and parasitic beetles, wasps, and flies are also
+        documented as natural enemies of white grubs.
+    </string>
+    <string name="natural_enemies_ww">
+        Wireworms have few natural enemies. Some ground beetles and rove beetles will feed on wireworms. The larvae
+        of stilleto flies are also known as predators of wireworms.
+    </string>
+</resources>

@@ -31,6 +31,7 @@ class InsectPestInfo : AppCompatActivity() {
                 binding.desc.text = resources.getString(R.string.desc_aw)
                 binding.damage.text = resources.getString(R.string.damage_aw)
                 binding.mgmt.text = resources.getString(R.string.mgmt_aw)
+                binding.naturalEnemies.text = resources.getString(R.string.natural_enemies_aw)
                 chem_control =  resources.getString(R.string.chem_control_aw) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
@@ -50,6 +51,7 @@ class InsectPestInfo : AppCompatActivity() {
                 binding.desc.text = resources.getString(R.string.desc_ca)
                 binding.damage.text = resources.getString(R.string.damage_ca)
                 binding.mgmt.text = resources.getString(R.string.mgmt_ca)
+                binding.naturalEnemies.text = resources.getString(R.string.natural_enemies_ca)
                 chem_control =  resources.getString(R.string.chem_control_ca) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
@@ -67,6 +69,7 @@ class InsectPestInfo : AppCompatActivity() {
                 binding.desc.text = resources.getString(R.string.desc_cb)
                 binding.damage.text = resources.getString(R.string.damage_cb)
                 binding.mgmt.text = resources.getString(R.string.mgmt_cb)
+                binding.naturalEnemies.text = resources.getString(R.string.natural_enemies_cb)
                 chem_control =  resources.getString(R.string.chem_control_cb) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
@@ -83,6 +86,7 @@ class InsectPestInfo : AppCompatActivity() {
                 binding.desc.text = resources.getString(R.string.desc_fb)
                 binding.damage.text = resources.getString(R.string.damage_fb)
                 binding.mgmt.text = resources.getString(R.string.mgmt_fb)
+                binding.naturalEnemies.text = resources.getString(R.string.natural_enemies_fb)
                 chem_control =  resources.getString(R.string.chem_control_fb) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
@@ -99,6 +103,7 @@ class InsectPestInfo : AppCompatActivity() {
                 binding.desc.text = resources.getString(R.string.desc_wg)
                 binding.damage.text = resources.getString(R.string.damage_wg)
                 binding.mgmt.text = resources.getString(R.string.mgmt_wg)
+                binding.naturalEnemies.text = resources.getString(R.string.natural_enemies_wg)
                 chem_control =  resources.getString(R.string.chem_control_wg) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
@@ -114,6 +119,7 @@ class InsectPestInfo : AppCompatActivity() {
                 binding.desc.text = resources.getString(R.string.desc_ww)
                 binding.damage.text = resources.getString(R.string.damage_ww)
                 binding.mgmt.text = resources.getString(R.string.mgmt_ww)
+                binding.naturalEnemies.text = resources.getString(R.string.natural_enemies_ww)
                 chem_control =  resources.getString(R.string.chem_control_ww) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
