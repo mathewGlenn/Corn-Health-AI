@@ -37,9 +37,6 @@
             android:name=".PredictionResult"
             android:exported="true" />
         <activity
-            android:name=".TestOnly"
-            android:exported="true"/>
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

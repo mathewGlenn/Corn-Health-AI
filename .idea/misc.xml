@@ -5,23 +5,25 @@
       <map>
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/circle.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/dotted_line.xml" value="0.2703125" />
-        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/gradient_button_main.xml" value="0.2703125" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/gradient_button_main.xml" value="0.176" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/gradient_main.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/gradient_obtain_image.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_farmer_clouds.xml" value="0.2703125" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_farmer_clouds_2.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_farmer_green.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_leaf.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_insect_pest_info.xml" value="0.264" />
-        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_leaf_disease_info.xml" value="0.34293745607870696" />
-        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_leaf_disease_info.xml" value="0.2" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_obtain_image.xml" value="0.2" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_predict.xml" value="0.264" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_prediction_info.xml" value="0.2" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_prediction_result.xml" value="0.264" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/layout_card_result.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/main_new_ui_test.xml" value="0.264" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/xml/dotted_line.xml" value="0.13020833333333334" />
       </map>
     </option>
   </component>
