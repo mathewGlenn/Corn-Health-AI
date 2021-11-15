@@ -1,7 +1,11 @@
 package com.glennappdev.cornhealthai
 
+import android.content.Intent
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.util.Linkify
 import android.view.View
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.glennappdev.cornhealthai.databinding.ActivityInsectPestInfoBinding
 import com.synnapps.carouselview.ImageListener
@@ -13,16 +17,16 @@ class InsectPestInfo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityInsectPestInfoBinding.inflate(layoutInflater)
-        val view : View = binding.root
+        val view: View = binding.root
         setContentView(view)
 
         val intent = intent
         val prediction = intent.getStringExtra("pred").toString()
 
         binding.label.text = prediction
-       // binding.img.setImageBitmap(Constants.Image)
+        // binding.img.setImageBitmap(Constants.Image)
 
-        val chem_control : String
+        val chem_control: String
 
         when (prediction) {
             "Army worm" -> {
@@ -32,7 +36,8 @@ class InsectPestInfo : AppCompatActivity() {
                 binding.damage.text = resources.getString(R.string.damage_aw)
                 binding.mgmt.text = resources.getString(R.string.mgmt_aw)
                 binding.naturalEnemies.text = resources.getString(R.string.natural_enemies_aw)
-                chem_control =  resources.getString(R.string.chem_control_aw) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
+                chem_control =
+                    resources.getString(R.string.chem_control_aw) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
                     R.drawable.aw1,
@@ -52,7 +57,8 @@ class InsectPestInfo : AppCompatActivity() {
                 binding.damage.text = resources.getString(R.string.damage_ca)
                 binding.mgmt.text = resources.getString(R.string.mgmt_ca)
                 binding.naturalEnemies.text = resources.getString(R.string.natural_enemies_ca)
-                chem_control =  resources.getString(R.string.chem_control_ca) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
+                chem_control =
+                    resources.getString(R.string.chem_control_ca) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
                     R.drawable.ca1,
@@ -70,7 +76,8 @@ class InsectPestInfo : AppCompatActivity() {
                 binding.damage.text = resources.getString(R.string.damage_cb)
                 binding.mgmt.text = resources.getString(R.string.mgmt_cb)
                 binding.naturalEnemies.text = resources.getString(R.string.natural_enemies_cb)
-                chem_control =  resources.getString(R.string.chem_control_cb) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
+                chem_control =
+                    resources.getString(R.string.chem_control_cb) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
                     R.drawable.cb1,
@@ -87,7 +94,8 @@ class InsectPestInfo : AppCompatActivity() {
                 binding.damage.text = resources.getString(R.string.damage_fb)
                 binding.mgmt.text = resources.getString(R.string.mgmt_fb)
                 binding.naturalEnemies.text = resources.getString(R.string.natural_enemies_fb)
-                chem_control =  resources.getString(R.string.chem_control_fb) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
+                chem_control =
+                    resources.getString(R.string.chem_control_fb) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
                     R.drawable.fb1,
@@ -104,7 +112,8 @@ class InsectPestInfo : AppCompatActivity() {
                 binding.damage.text = resources.getString(R.string.damage_wg)
                 binding.mgmt.text = resources.getString(R.string.mgmt_wg)
                 binding.naturalEnemies.text = resources.getString(R.string.natural_enemies_wg)
-                chem_control =  resources.getString(R.string.chem_control_wg) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
+                chem_control =
+                    resources.getString(R.string.chem_control_wg) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
                     R.drawable.wg1,
@@ -120,7 +129,8 @@ class InsectPestInfo : AppCompatActivity() {
                 binding.damage.text = resources.getString(R.string.damage_ww)
                 binding.mgmt.text = resources.getString(R.string.mgmt_ww)
                 binding.naturalEnemies.text = resources.getString(R.string.natural_enemies_ww)
-                chem_control =  resources.getString(R.string.chem_control_ww) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
+                chem_control =
+                    resources.getString(R.string.chem_control_ww) + "\n\n" + resources.getString(R.string.note_when_using_pesticide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
                     R.drawable.ww1,
@@ -138,10 +148,34 @@ class InsectPestInfo : AppCompatActivity() {
         val carouselView = binding.carouselView
         carouselView.pageCount = images.size
         carouselView.setImageListener(imageListener)
+
+        carouselView.setImageClickListener { position ->
+            val i = Intent(this, ViewImagesFull::class.java)
+            i.putExtra("img", images[position])
+            startActivity(i)
+        }
+
+        val alertDialogBuilder = AlertDialog.Builder(this)
+        val dialogText = SpannableString(
+            resources.getString(R.string.pesticide_dialog) + " " +
+                    resources.getString(R.string.fpa_link) + "\n\n" +
+                    resources.getString(R.string.pesticide_dialog_warning))
+
+        Linkify.addLinks(dialogText, Linkify.ALL)
+        alertDialogBuilder.setTitle("Information")
+        alertDialogBuilder.setMessage(dialogText)
+        alertDialogBuilder.setCancelable(true)
+            .setPositiveButton("Ok") { dialogInterface, i ->
+                dialogInterface.cancel()
+            }
+
+        val alertDialog = alertDialogBuilder.create()
+        binding.infoChemControl.setOnClickListener {
+            alertDialog.show()
+        }
     }
 
-    var imageListener = ImageListener{
-        position, imageView ->
+    var imageListener = ImageListener { position, imageView ->
         imageView.setImageResource(images[position])
     }
 }

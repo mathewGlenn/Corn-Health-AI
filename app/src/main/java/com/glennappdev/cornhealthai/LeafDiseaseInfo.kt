@@ -1,10 +1,20 @@
 package com.glennappdev.cornhealthai
 
+import android.content.Intent
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.SpannableStringBuilder
+import android.text.method.LinkMovementMethod
+import android.text.util.Linkify
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.glennappdev.cornhealthai.databinding.ActivityLeafDiseaseInfoBinding
 import com.synnapps.carouselview.ImageListener
+
 
 class LeafDiseaseInfo : AppCompatActivity() {
 
@@ -21,7 +31,7 @@ class LeafDiseaseInfo : AppCompatActivity() {
 
         binding.label.text = prediction
 
-        val chem_control : String
+        val chem_control: String
 
         when (prediction) {
             "Common rust" -> {
@@ -30,7 +40,8 @@ class LeafDiseaseInfo : AppCompatActivity() {
                 binding.desc.text = resources.getString(R.string.desc_cr)
                 binding.symptoms.text = resources.getString(R.string.symptoms_cr)
                 binding.mgmt.text = resources.getString(R.string.mgmt_cr)
-                chem_control = resources.getString(R.string.chem_control_cr) + "\n\n" + resources.getString(R.string.note_when_using_fungicide)
+                chem_control =
+                    resources.getString(R.string.chem_control_cr) + "\n\n" + resources.getString(R.string.note_when_using_fungicide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
                     R.drawable.cr1,
@@ -44,7 +55,8 @@ class LeafDiseaseInfo : AppCompatActivity() {
                 binding.desc.text = resources.getString(R.string.desc_gls)
                 binding.symptoms.text = resources.getString(R.string.symptoms_gls)
                 binding.mgmt.text = resources.getString(R.string.mgmt_gls)
-                chem_control = resources.getString(R.string.chem_control_gls) + "\n\n" + resources.getString(R.string.note_when_using_fungicide)
+                chem_control =
+                    resources.getString(R.string.chem_control_gls) + "\n\n" + resources.getString(R.string.note_when_using_fungicide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
                     R.drawable.gls1,
@@ -59,7 +71,8 @@ class LeafDiseaseInfo : AppCompatActivity() {
                 binding.desc.text = resources.getString(R.string.desc_nlb)
                 binding.symptoms.text = resources.getString(R.string.symptoms_nlb)
                 binding.mgmt.text = resources.getString(R.string.mgmt_nlb)
-                chem_control = resources.getString(R.string.chem_control_nlb) + "\n\n" + resources.getString(R.string.note_when_using_fungicide)
+                chem_control =
+                    resources.getString(R.string.chem_control_nlb) + "\n\n" + resources.getString(R.string.note_when_using_fungicide)
                 binding.chemControl.text = chem_control
                 images = arrayListOf(
                     R.drawable.nlb1,
@@ -71,7 +84,33 @@ class LeafDiseaseInfo : AppCompatActivity() {
         val carouselView = binding.carouselView
         carouselView.pageCount = images.size
         carouselView.setImageListener(imageListener)
+
+        carouselView.setImageClickListener { position ->
+            val i = Intent(this, ViewImagesFull::class.java)
+            i.putExtra("img", images[position])
+            startActivity(i)
+        }
+
+        val alertDialogBuilder = AlertDialog.Builder(this)
+        val dialogText = SpannableString(
+            resources.getString(R.string.fungicide_dialog) + " " +
+                    resources.getString(R.string.fpa_link) + "\n\n")
+
+        Linkify.addLinks(dialogText, Linkify.ALL)
+        alertDialogBuilder.setTitle("Information")
+        alertDialogBuilder.setMessage(dialogText)
+        alertDialogBuilder.setCancelable(true)
+            .setPositiveButton("Ok") { dialogInterface, i ->
+                dialogInterface.cancel()
+            }
+
+        val alertDialog = alertDialogBuilder.create()
+        binding.infoChemControl.setOnClickListener {
+            alertDialog.show()
+        }
+
     }
+
     var imageListener = ImageListener { position, imageView ->
         imageView.setImageResource(images[position])
     }

@@ -5,6 +5,7 @@ import android.graphics.Bitmap
 class Constants {
     companion object{
         var Image : Bitmap? = null
+        var ArrayImages = ArrayList<Int>()
 
         val LEAF_DISEASES = arrayListOf(
             "Common rust",

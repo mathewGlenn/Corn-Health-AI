@@ -24,6 +24,8 @@
                 android:layout_height="match_parent">
 
                 <ImageView
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
                     android:id="@+id/btnBack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -51,6 +53,17 @@
 
         </androidx.cardview.widget.CardView>
 
+        <ImageView
+            android:layout_width="40dp"
+            android:scaleType="fitXY"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_fullscreen_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/cardImg"
+            android:layout_margin="20dp"
+            android:id="@+id/viewImageFull"
+            app:tint="@color/white" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardImg"
@@ -109,8 +122,8 @@
             android:text="science"
             android:textSize="15sp"
             android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="@id/t_sci_name"
-            app:layout_constraintStart_toEndOf="@id/t_sci_name" />
+            app:layout_constraintTop_toBottomOf="@id/t_sci_name"
+            app:layout_constraintStart_toStartOf="@id/t_sci_name"/>
 
 
             <LinearLayout
@@ -118,7 +131,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@id/t_sci_name">
+                app:layout_constraintTop_toBottomOf="@id/sci_name">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -208,14 +221,36 @@
                     android:text="@string/lorem_short"
                     android:textColor="@color/text_black" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20sp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Chemical Control"
-                    android:textColor="@color/text_black"
-                    android:textSize="20sp" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/t_chem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Chemical Control"
+                        android:textColor="@color/text_black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:id="@+id/info_chem_control"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_info_24"
+                        app:layout_constraintStart_toEndOf="@id/t_chem"
+                        app:layout_constraintTop_toTopOf="@id/t_chem"
+                        app:layout_constraintBottom_toBottomOf="@id/t_chem"
+                        android:layout_marginStart="15dp"
+                        app:tint="@color/text_black" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
 
                 <TextView
                     android:id="@+id/chem_control"
