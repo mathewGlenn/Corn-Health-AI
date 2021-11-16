@@ -12,7 +12,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardBar"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="@dimen/card_bar"
         app:cardBackgroundColor="#FFFFFF"
         app:cardElevation="8dp"
         app:layout_constraintTop_toTopOf="parent">

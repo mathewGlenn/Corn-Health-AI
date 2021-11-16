@@ -1,92 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".InsectPestInfo">
+    <View
+        android:id="@+id/cardBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_bar"
+        android:background="@color/white"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_bar"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/light_gray"
+            app:cardCornerRadius="160dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:tint="@color/text_black" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/txtBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Insect Pest Info"
+
+            android:textColor="@color/text_black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnBack"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardBar"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            app:cardBackgroundColor="#FFFFFF"
-            app:cardElevation="8dp"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    android:clickable="true"
-                    android:id="@+id/btnBack"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:src="@drawable/ic_baseline_arrow_back_24"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:tint="@color/text_black" />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="@font/roboto_regular"
-                    android:text="Insect Pest Info"
-
-                    android:textColor="#323131"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/btnBack"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
-
         <ImageView
             android:layout_width="40dp"
-            android:scaleType="fitXY"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_baseline_fullscreen_24"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
             android:elevation="10dp"
-            app:layout_constraintBottom_toBottomOf="@id/cardImg"
-            android:layout_margin="20dp"
-            android:id="@+id/viewImageFull"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_tap_image"
+            app:layout_constraintBottom_toTopOf="@id/lineOnCarousel"
+            app:layout_constraintEnd_toEndOf="parent"
             app:tint="@color/white" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardImg"
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselView"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:autoPlay="true"
+            app:fillColor="#FFFFFFFF"
+            app:indicatorGravity="top|center"
             app:layout_constraintDimensionRatio="H, 1:1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cardBar">
+            app:layout_constraintTop_toTopOf="parent"
+            app:pageColor="#00000000"
+            app:radius="6dp"
+            app:slideInterval="6000"
+            app:strokeColor="#FF777777"
+            app:strokeWidth="1dp" />
 
-            <com.synnapps.carouselview.CarouselView
-                android:id="@+id/carouselView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:autoPlay="true"
-                app:fillColor="#FFFFFFFF"
-                app:layout_constraintTop_toTopOf="parent"
-                app:pageColor="#00000000"
-                app:radius="6dp"
-                app:slideInterval="6000"
-                app:strokeColor="#FF777777"
-                app:strokeWidth="1dp" />
-        </androidx.cardview.widget.CardView>
+        <View
+            android:id="@+id/lineOnCarousel"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintBottom_toBottomOf="@id/carouselView" />
+
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/lineOnCarousel">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/label"
@@ -99,7 +127,7 @@
             android:text="label"
             android:textColor="@color/text_black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cardImg" />
+            app:layout_constraintTop_toTopOf="parent"/>
 
 
         <TextView
@@ -126,37 +154,37 @@
             app:layout_constraintStart_toStartOf="@id/t_sci_name"/>
 
 
-            <LinearLayout
-                android:layout_marginTop="30dp"
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/sci_name">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="Description"
+                android:textColor="@color/text_black"/>
+
+            <TextView
+                android:id="@+id/desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@id/sci_name">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="20dp"
-                    android:textSize="22sp"
-                    android:fontFamily="@font/montserrat_semi_bold"
-                    android:text="Description"
-                    android:textColor="@color/text_black"/>
-
-                <TextView
-                    android:id="@+id/desc"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_regular"
-                    android:text="lorem ipsum dolor sit amet"
-                    android:textColor="@color/text_black"
-                    android:padding="20dp"/>
+                android:fontFamily="@font/roboto_regular"
+                android:text="lorem ipsum dolor sit amet"
+                android:textColor="@color/text_black"
+                android:padding="20dp"/>
 
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:background="@drawable/dotted_line"
-                    android:layerType="software" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/dotted_line"
+                android:layerType="software" />
 
 
             <TextView
@@ -179,11 +207,11 @@
                 android:padding="20dp"/>
 
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:background="@drawable/dotted_line"
-                    android:layerType="software" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/dotted_line"
+                android:layerType="software" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -202,88 +230,93 @@
                 android:text="lorem ipsum dolor sit amet"
                 android:textColor="@color/text_black"
                 android:padding="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Natural Enemies"
+                android:textColor="@color/text_black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/natural_enemies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="20dp"
+                android:text="@string/lorem_short"
+                android:textColor="@color/text_black" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
                 <TextView
+                    android:id="@+id/t_chem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20sp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Natural Enemies"
+                    android:text="Chemical Control"
                     android:textColor="@color/text_black"
                     android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/natural_enemies"
+                <ImageView
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:id="@+id/info_chem_control"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="20dp"
-                    android:paddingHorizontal="20dp"
-                    android:text="@string/lorem_short"
-                    android:textColor="@color/text_black" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/t_chem"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:fontFamily="@font/montserrat_medium"
-                        android:text="Chemical Control"
-                        android:textColor="@color/text_black"
-                        android:textSize="20sp" />
-
-                    <ImageView
-                        android:background="?attr/selectableItemBackgroundBorderless"
-                        android:clickable="true"
-                        android:id="@+id/info_chem_control"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_info_24"
-                        app:layout_constraintStart_toEndOf="@id/t_chem"
-                        app:layout_constraintTop_toTopOf="@id/t_chem"
-                        app:layout_constraintBottom_toBottomOf="@id/t_chem"
-                        android:layout_marginStart="15dp"
-                        app:tint="@color/text_black" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:src="@drawable/ic_baseline_info_24"
+                    app:layout_constraintStart_toEndOf="@id/t_chem"
+                    app:layout_constraintTop_toTopOf="@id/t_chem"
+                    app:layout_constraintBottom_toBottomOf="@id/t_chem"
+                    android:layout_marginStart="15dp"
+                    app:tint="@color/text_black" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-                <TextView
-                    android:id="@+id/chem_control"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:paddingHorizontal="20dp"
-                    android:text="@string/lorem_short"
-                    android:textColor="@color/text_black" />
+            <TextView
+                android:id="@+id/chem_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="20dp"
+                android:text="@string/lorem_short"
+                android:textColor="@color/text_black" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20sp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="Organic Control"
-                    android:textColor="@color/text_black"
-                    android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Organic Control"
+                android:textColor="@color/text_black"
+                android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/organic_control"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:paddingHorizontal="20dp"
-                    android:text="@string/lorem_short"
-                    android:textColor="@color/text_black" />
+            <TextView
+                android:id="@+id/organic_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="20dp"
+                android:text="@string/lorem_short"
+                android:textColor="@color/text_black" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"/>
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,5 +26,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.cardSettings.setOnClickListener{
+            startActivity(Intent(this, Settings::class.java))
+        }
+
+        binding.cardLibrary.setOnClickListener{
+            startActivity(Intent(this, Library::class.java))
+        }
+
     }
 }

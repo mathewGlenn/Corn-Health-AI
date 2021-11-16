@@ -24,11 +24,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".TestUI"
+            android:exported="false" />
+        <activity
+            android:name=".Library"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
             android:name=".ViewImagesFull"
             android:exported="false" />
         <activity
             android:name=".ObtainImage"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".LeafDiseaseInfo"
             android:exported="false" />

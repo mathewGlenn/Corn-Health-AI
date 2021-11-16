@@ -10,4 +10,6 @@
     <color name="text_black">#252525</color>
     <color name="tint_image">#3743A047</color>
     <color name="dotted_line">#838383</color>
+<color name="light_gray">#BCDCDCDC</color>
+    <color name="gray">#717171</color>
 </resources>
