@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Library">
+
+
+    <View
+        android:id="@+id/cardBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_bar"
+        android:background="@color/white"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:elevation="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="@dimen/card_bar">
+
+            <ImageView
+                android:elevation="1dp"
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/text_black" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Library"
+
+                android:textColor="@color/text_black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnBack"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imgTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/corn_field_for_library"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/lineOnImg"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintBottom_toBottomOf="@id/imgTop" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:cardCornerRadius="20dp"
+                app:layout_constraintTop_toBottomOf="@id/lineOnImg">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="45dp">
+
+                    <ImageView
+                        android:id="@+id/cornIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/corn_icon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Insect pests and leaf diseases in corn."
+                        android:textColor="@color/text_black"
+                        app:layout_constraintBottom_toBottomOf="@id/cornIcon"
+                        app:layout_constraintStart_toEndOf="@id/cornIcon"
+                        app:layout_constraintTop_toTopOf="@id/cornIcon" />
+
+                    <View
+                        android:id="@+id/midLine"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/cornIcon" />
+
+                    <TextView
+                        android:id="@+id/txtLeafDiseases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Leaf Diseases"
+                        android:textColor="@color/text_black"
+                        android:textSize="22sp"
+                        app:layout_constraintStart_toStartOf="@id/cornIcon"
+                        app:layout_constraintTop_toBottomOf="@id/cornIcon" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card1"
+                        android:layout_width="160dp"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="5dp"
+                        app:cardCornerRadius="15dp"
+                        app:layout_constraintEnd_toStartOf="@id/midLine"
+                        app:layout_constraintTop_toBottomOf="@id/txtLeafDiseases">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgcr"
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/cr1"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txtcr"
+                                style="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:text="@string/name_cr"
+                                android:textColor="@color/text_black"
+                                app:layout_constraintTop_toBottomOf="@id/imgcr" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/cause_cr"
+                                android:textColor="@color/gray"
+                                android:textSize="13sp"
+                                app:layout_constraintTop_toBottomOf="@id/txtcr" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card2"
+                        android:layout_width="160dp"
+                        android:layout_height="210dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="30dp"
+                        app:cardCornerRadius="15dp"
+                        app:layout_constraintStart_toEndOf="@id/midLine"
+                        app:layout_constraintTop_toBottomOf="@id/txtLeafDiseases">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imggls"
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/gls1"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txtgls"
+                                style="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:text="@string/name_gls"
+                                android:textColor="@color/text_black"
+                                app:layout_constraintTop_toBottomOf="@id/imggls" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/cause_gls"
+                                android:textColor="@color/gray"
+                                android:textSize="13sp"
+                                app:layout_constraintTop_toBottomOf="@id/txtgls" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card3"
+                        android:layout_width="160dp"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="5dp"
+                        app:cardCornerRadius="15dp"
+                        app:layout_constraintEnd_toStartOf="@id/midLine"
+                        app:layout_constraintTop_toBottomOf="@id/card1">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgnlb"
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/nlb3"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txtnlb"
+                                style="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:text="@string/name_nlb"
+                                android:textColor="@color/text_black"
+                                app:layout_constraintTop_toBottomOf="@id/imgnlb" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Exerohilum turicum"
+                                android:textColor="@color/gray"
+                                android:textSize="13sp"
+                                app:layout_constraintTop_toBottomOf="@id/txtnlb" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/txtInsects"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Insect Pests"
+                        android:textColor="@color/text_black"
+                        android:textSize="22sp"
+                        app:layout_constraintStart_toStartOf="@id/cornIcon"
+                        app:layout_constraintTop_toBottomOf="@id/card3" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_a"
+                        android:layout_width="160dp"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="5dp"
+                        app:cardCornerRadius="15dp"
+                        app:layout_constraintEnd_toStartOf="@id/midLine"
+                        app:layout_constraintTop_toBottomOf="@id/txtInsects">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgaw"
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/aw3"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txtaw"
+                                style="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:text="@string/name_aw"
+                                android:textColor="@color/text_black"
+                                app:layout_constraintTop_toBottomOf="@id/imgaw" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/sci_name_aw"
+                                android:textColor="@color/gray"
+                                android:textSize="13sp"
+                                app:layout_constraintTop_toBottomOf="@id/txtaw" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_b"
+                        android:layout_width="160dp"
+                        android:layout_height="210dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="30dp"
+                        app:cardCornerRadius="15dp"
+                        app:layout_constraintStart_toEndOf="@id/midLine"
+                        app:layout_constraintTop_toBottomOf="@id/txtInsects">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgca"
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ca1"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txtca"
+                                style="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:text="@string/name_ca"
+                                android:textColor="@color/text_black"
+                                app:layout_constraintTop_toBottomOf="@id/imgca" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/sci_name_ca"
+                                android:textColor="@color/gray"
+                                android:textSize="13sp"
+                                app:layout_constraintTop_toBottomOf="@id/txtca" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_c"
+                        android:layout_width="160dp"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="5dp"
+                        app:cardCornerRadius="15dp"
+                        app:layout_constraintEnd_toStartOf="@id/midLine"
+                        app:layout_constraintTop_toBottomOf="@id/card_a">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgcb"
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/cb1"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txtcb"
+                                style="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:text="@string/name_cb"
+                                android:textColor="@color/text_black"
+                                app:layout_constraintTop_toBottomOf="@id/imgcb" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/sci_name_cb"
+                                android:textColor="@color/gray"
+                                android:textSize="13sp"
+                                app:layout_constraintTop_toBottomOf="@id/txtcb" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_d"
+                        android:layout_width="160dp"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="5dp"
+                        app:cardCornerRadius="15dp"
+                        app:layout_constraintStart_toEndOf="@id/midLine"
+                        app:layout_constraintTop_toBottomOf="@id/card_a">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgfb"
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/fb1"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txtfb"
+                                style="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:text="@string/name_fb"
+                                android:textColor="@color/text_black"
+                                app:layout_constraintTop_toBottomOf="@id/imgfb" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/sci_name_fb"
+                                android:textColor="@color/gray"
+                                android:textSize="13sp"
+                                app:layout_constraintTop_toBottomOf="@id/txtfb" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_e"
+                        android:layout_width="160dp"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="5dp"
+                        app:cardCornerRadius="15dp"
+                        app:layout_constraintEnd_toStartOf="@id/midLine"
+                        app:layout_constraintTop_toBottomOf="@id/card_c">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgwg"
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/wg1"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txtwg"
+                                style="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:text="@string/name_wg"
+                                android:textColor="@color/text_black"
+                                app:layout_constraintTop_toBottomOf="@id/imgwg" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/sci_name_wg"
+                                android:textColor="@color/gray"
+                                android:textSize="13sp"
+                                app:layout_constraintTop_toBottomOf="@id/txtwg" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_f"
+                        android:layout_width="160dp"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="5dp"
+                        app:cardCornerRadius="15dp"
+                        app:layout_constraintStart_toEndOf="@id/midLine"
+                        app:layout_constraintTop_toBottomOf="@id/card_d">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgww"
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ww1"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txtww"
+                                style="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:text="@string/name_ww"
+                                android:textColor="@color/text_black"
+                                app:layout_constraintTop_toBottomOf="@id/imgww" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/sci_name_ww"
+                                android:textColor="@color/gray"
+                                android:textSize="13sp"
+                                app:layout_constraintTop_toBottomOf="@id/txtww" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        app:layout_constraintTop_toBottomOf="@id/card_f"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
