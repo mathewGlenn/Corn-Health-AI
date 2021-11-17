@@ -3,6 +3,7 @@ package com.glennappdev.cornhealthai
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.glennappdev.cornhealthai.databinding.ActivityPredictionResultBinding
 
@@ -122,6 +123,27 @@ class PredictionResult : AppCompatActivity() {
                 startActivity(Intent(this, LeafDiseaseInfo::class.java).putExtra("pred", class2))
             else
                 startActivity(Intent(this, InsectPestInfo::class.java).putExtra("pred", class2))
+        }
+
+        val alertDialogBuilder = AlertDialog.Builder(this)
+        var dialogMessage = ""
+
+        if (model == "leaf_disease")
+            dialogMessage = "Please check if the predicted disease match the damage in your crop."
+        else
+            dialogMessage =
+                "Please check if the predicted insect pest match the description of the insect pest found in your crop."
+
+        alertDialogBuilder.setMessage(dialogMessage)
+        alertDialogBuilder.setCancelable(true)
+        val alertDialog = alertDialogBuilder.create()
+
+        binding.info.setOnClickListener {
+            alertDialog.show()
+        }
+
+        binding.btnBack.setOnClickListener{
+            finish()
         }
     }
 }

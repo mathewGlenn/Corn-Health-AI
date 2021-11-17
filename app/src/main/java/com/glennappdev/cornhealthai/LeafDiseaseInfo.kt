@@ -125,9 +125,14 @@ class LeafDiseaseInfo : AppCompatActivity() {
             alertDialog.show()
         }
 
+        binding.btnBack.setOnClickListener{
+            finish()
+        }
+
     }
 
     var imageListener = ImageListener { position, imageView ->
         imageView.setImageResource(images[position])
     }
+
 }

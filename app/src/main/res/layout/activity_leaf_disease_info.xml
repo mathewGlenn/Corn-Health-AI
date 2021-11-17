@@ -121,14 +121,15 @@
 
                     <TextView
                         android:id="@+id/label"
-                        style="@style/TextAppearance.AppCompat.Headline"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
-                        android:fontFamily="@font/montserrat_medium"
+                        android:fontFamily="@font/montserrat_bold"
                         android:text="label"
+
                         android:textColor="@color/text_black"
+                        android:textSize="30sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -137,34 +138,37 @@
                         android:id="@+id/t_cause"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/montserrat_semi_bold"
-                        android:text="Cause: "
-                        android:textColor="#373737"
-                        android:textSize="16sp"
-                        app:layout_constraintStart_toStartOf="@id/label"
-                        app:layout_constraintTop_toBottomOf="@id/label" />
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="cause"
+                        android:textColor="@color/gray"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@id/cause"
+                        app:layout_constraintTop_toBottomOf="@id/cause" />
 
                     <TextView
                         android:id="@+id/cause"
+                        android:layout_marginTop="5dp"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat_medium"
+                        android:fontFamily="@font/roboto_medium"
                         android:text="cause"
-                        android:textSize="15sp"
+                        android:textColor="@color/text_black"
+                        android:textSize="17sp"
                         android:textStyle="italic"
-                        app:layout_constraintStart_toStartOf="@id/t_cause"
-                        app:layout_constraintTop_toBottomOf="@id/t_cause" />
+                        app:layout_constraintStart_toStartOf="@id/label"
+                        app:layout_constraintTop_toBottomOf="@id/label" />
+
 
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="60dp"
                         android:orientation="vertical"
                         app:layout_constraintTop_toBottomOf="@id/cause">
 
                         <TextView
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
@@ -172,14 +176,16 @@
                             android:fontFamily="@font/montserrat_semi_bold"
                             android:text="Description"
                             android:textColor="@color/text_black"
-                            android:textSize="22sp" />
+                            android:textSize="20sp" />
 
                         <TextView
                             android:id="@+id/desc"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/roboto_regular"
-                            android:padding="20dp"
+                            android:paddingHorizontal="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="20dp"
                             android:text="@string/lorem"
                             android:textColor="@color/text_black" />
 
@@ -199,14 +205,16 @@
                             android:fontFamily="@font/montserrat_semi_bold"
                             android:text="Symptoms"
                             android:textColor="@color/text_black"
-                            android:textSize="22sp" />
+                            android:textSize="20sp" />
 
                         <TextView
                             android:id="@+id/symptoms"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/roboto_regular"
-                            android:padding="20dp"
+                            android:paddingHorizontal="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="20dp"
                             android:text="@string/lorem_short"
                             android:textColor="@color/text_black" />
 
@@ -225,14 +233,16 @@
                             android:fontFamily="@font/montserrat_semi_bold"
                             android:text="Management Strategy"
                             android:textColor="@color/text_black"
-                            android:textSize="22sp" />
+                            android:textSize="20sp" />
 
                         <TextView
                             android:id="@+id/mgmt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/roboto_regular"
-                            android:padding="20dp"
+                            android:paddingHorizontal="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="20dp"
                             android:text="@string/lorem_short"
                             android:textColor="@color/text_black" />
 

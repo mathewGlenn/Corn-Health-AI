@@ -24,8 +24,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".TestUI"
-            android:exported="false" />
+            android:name=".TestUI">
+
+        </activity>
         <activity
             android:name=".Library"
             android:exported="false" />

@@ -14,43 +14,51 @@
         android:layout_height="@dimen/card_bar"
         android:background="@color/white"
         android:elevation="10dp"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:elevation="10dp"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_height="@dimen/card_bar">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_bar"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/light_gray"
+            app:cardCornerRadius="160dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:elevation="1dp"
-                android:id="@+id/btnBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:clickable="true"
+                android:layout_margin="5dp"
                 android:src="@drawable/ic_baseline_arrow_back_24"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 app:tint="@color/text_black" />
+        </androidx.cardview.widget.CardView>
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/roboto_regular"
-                android:text="Library"
+        <TextView
+            android:id="@+id/txtBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Library"
 
-                android:textColor="@color/text_black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@id/btnBack"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
+            android:textColor="@color/text_black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnBack"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -82,8 +90,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
                 app:layout_constraintTop_toBottomOf="@id/lineOnImg">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -93,23 +101,29 @@
 
                     <ImageView
                         android:id="@+id/cornIcon"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="20dp"
                         android:src="@drawable/corn_icon"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/txtTop"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:text="Insect pests and leaf diseases in corn."
+                        android:layout_marginTop="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="5dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/cornIcon"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="@string/library_txt"
                         android:textColor="@color/text_black"
-                        app:layout_constraintBottom_toBottomOf="@id/cornIcon"
+                        android:textSize="15sp"
                         app:layout_constraintStart_toEndOf="@id/cornIcon"
-                        app:layout_constraintTop_toTopOf="@id/cornIcon" />
+                        app:layout_constraintBottom_toBottomOf="@id/cornIcon" />
 
                     <View
                         android:id="@+id/midLine"
@@ -117,29 +131,41 @@
                         android:layout_height="match_parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/cornIcon" />
+                        app:layout_constraintTop_toBottomOf="@id/txtTop" />
 
                     <TextView
                         android:id="@+id/txtLeafDiseases"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="60dp"
                         android:fontFamily="@font/montserrat_semi_bold"
                         android:text="Leaf Diseases"
                         android:textColor="@color/text_black"
                         android:textSize="22sp"
-                        app:layout_constraintStart_toStartOf="@id/cornIcon"
-                        app:layout_constraintTop_toBottomOf="@id/cornIcon" />
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintTop_toBottomOf="@id/txtTop" />
+
+                    <View
+                        android:id="@+id/lineBelowTextLeafDiseases"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/light_gray"
+                        app:layout_constraintTop_toBottomOf="@id/txtLeafDiseases" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/card1"
                         android:layout_width="160dp"
                         android:layout_height="210dp"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginEnd="5dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
                         app:cardCornerRadius="15dp"
                         app:layout_constraintEnd_toStartOf="@id/midLine"
-                        app:layout_constraintTop_toBottomOf="@id/txtLeafDiseases">
+                        app:layout_constraintTop_toBottomOf="@id/lineBelowTextLeafDiseases">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -184,10 +210,12 @@
                         android:layout_width="160dp"
                         android:layout_height="210dp"
                         android:layout_marginStart="5dp"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="20dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
                         app:cardCornerRadius="15dp"
                         app:layout_constraintStart_toEndOf="@id/midLine"
-                        app:layout_constraintTop_toBottomOf="@id/txtLeafDiseases">
+                        app:layout_constraintTop_toBottomOf="@id/lineBelowTextLeafDiseases">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -230,8 +258,10 @@
                         android:id="@+id/card3"
                         android:layout_width="160dp"
                         android:layout_height="210dp"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginEnd="5dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
                         app:cardCornerRadius="15dp"
                         app:layout_constraintEnd_toStartOf="@id/midLine"
                         app:layout_constraintTop_toBottomOf="@id/card1">
@@ -283,19 +313,31 @@
                         android:text="Insect Pests"
                         android:textColor="@color/text_black"
                         android:textSize="22sp"
-                        app:layout_constraintStart_toStartOf="@id/cornIcon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="20dp"
                         app:layout_constraintTop_toBottomOf="@id/card3" />
+
+                    <View
+                        android:id="@+id/linebelowTextInsects"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/light_gray"
+                        app:layout_constraintTop_toBottomOf="@id/txtInsects" />
 
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/card_a"
                         android:layout_width="160dp"
                         android:layout_height="210dp"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginEnd="5dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
                         app:cardCornerRadius="15dp"
                         app:layout_constraintEnd_toStartOf="@id/midLine"
-                        app:layout_constraintTop_toBottomOf="@id/txtInsects">
+                        app:layout_constraintTop_toBottomOf="@id/linebelowTextInsects">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -340,10 +382,12 @@
                         android:layout_width="160dp"
                         android:layout_height="210dp"
                         android:layout_marginStart="5dp"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="20dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
                         app:cardCornerRadius="15dp"
                         app:layout_constraintStart_toEndOf="@id/midLine"
-                        app:layout_constraintTop_toBottomOf="@id/txtInsects">
+                        app:layout_constraintTop_toBottomOf="@id/linebelowTextInsects">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -386,8 +430,10 @@
                         android:id="@+id/card_c"
                         android:layout_width="160dp"
                         android:layout_height="210dp"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginEnd="5dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
                         app:cardCornerRadius="15dp"
                         app:layout_constraintEnd_toStartOf="@id/midLine"
                         app:layout_constraintTop_toBottomOf="@id/card_a">
@@ -433,8 +479,10 @@
                         android:id="@+id/card_d"
                         android:layout_width="160dp"
                         android:layout_height="210dp"
-                        android:layout_marginTop="30dp"
                         android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
                         app:cardCornerRadius="15dp"
                         app:layout_constraintStart_toEndOf="@id/midLine"
                         app:layout_constraintTop_toBottomOf="@id/card_a">
@@ -480,8 +528,10 @@
                         android:id="@+id/card_e"
                         android:layout_width="160dp"
                         android:layout_height="210dp"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginEnd="5dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
                         app:cardCornerRadius="15dp"
                         app:layout_constraintEnd_toStartOf="@id/midLine"
                         app:layout_constraintTop_toBottomOf="@id/card_c">
@@ -527,8 +577,10 @@
                         android:id="@+id/card_f"
                         android:layout_width="160dp"
                         android:layout_height="210dp"
-                        android:layout_marginTop="30dp"
                         android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
                         app:cardCornerRadius="15dp"
                         app:layout_constraintStart_toEndOf="@id/midLine"
                         app:layout_constraintTop_toBottomOf="@id/card_d">
@@ -571,15 +623,86 @@
                     </androidx.cardview.widget.CardView>
 
                     <View
+                        android:id="@+id/lineAboveCardFieldMonitoring"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@color/light_gray"
+                        app:layout_constraintTop_toBottomOf="@id/card_f" />
+
+                    <androidx.cardview.widget.CardView
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:id="@+id/cardMonitorPest"
+                        android:layout_width="330dp"
+                        android:layout_height="420dp"
+                        android:layout_marginTop="40dp"
+                        app:cardCornerRadius="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/lineAboveCardFieldMonitoring">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:background="#F1F8E9"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgMonitorPest"
+                                android:layout_width="match_parent"
+                                android:layout_height="210dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/insect_monitoring"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txtMonitorInsectPest"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:text="Field Monitoring"
+                                android:textAlignment="center"
+                                android:textColor="@color/text_black"
+                                android:textSize="22sp"
+                                app:layout_constraintTop_toBottomOf="@id/imgMonitorPest" />
+
+                            <TextView
+                                android:id="@+id/txtInfoFieldMonitoring"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:paddingHorizontal="20dp"
+                                android:text="@string/field_monitoring"
+                                android:textAlignment="center"
+                                android:textColor="@color/text_black"
+                                android:textSize="14sp"
+                                app:layout_constraintTop_toBottomOf="@id/txtMonitorInsectPest" />
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/round_corner_button"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:text="Learn more"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                app:layout_constraintTop_toBottomOf="@id/txtInfoFieldMonitoring" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
-                        app:layout_constraintTop_toBottomOf="@id/card_f"/>
-
+                        app:layout_constraintTop_toBottomOf="@id/cardMonitorPest" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
             </androidx.cardview.widget.CardView>
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

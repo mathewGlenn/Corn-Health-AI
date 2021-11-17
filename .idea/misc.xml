@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable-v24/gradient_library.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/circle.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/dotted_line.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/gradient_button_main.xml" value="0.176" />
@@ -19,16 +20,17 @@
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_leaf.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_tap_image.xml" value="0.16510416666666666" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/oval.xml" value="0.24351851851851852" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/round_corner_button.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_insect_pest_info.xml" value="0.264" />
-        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_leaf_disease_info.xml" value="0.1" />
-        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_library.xml" value="0.2" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_leaf_disease_info.xml" value="0.4" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_library.xml" value="0.176" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_obtain_image.xml" value="0.2" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_predict.xml" value="0.264" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_prediction_info.xml" value="0.2" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_prediction_result.xml" value="0.264" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_settings.xml" value="0.264" />
-        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_test_ui.xml" value="0.2" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_test_ui.xml" value="0.4" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_view_images_full.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/chemicals_info_dialog.xml" value="0.264" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/layout_card_result.xml" value="0.27291666666666664" />

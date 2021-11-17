@@ -190,6 +190,10 @@ class InsectPestInfo : AppCompatActivity() {
         binding.infoChemControl.setOnClickListener {
             alertDialog.show()
         }
+
+        binding.btnBack.setOnClickListener{
+            finish()
+        }
     }
 
     var imageListener = ImageListener { position, imageView ->

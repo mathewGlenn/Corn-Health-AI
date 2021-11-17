@@ -16,7 +16,9 @@ class Library : AppCompatActivity() {
 
         // set opacity of cardBar to 0
         val topBar = binding.cardBar
+        val textBar = binding.txtBar
         topBar.alpha = 0f
+        textBar.alpha = 0f
         // while scrolling up, opacity of cardBar increases up to original opacity
         binding.scrollView.viewTreeObserver.addOnScrollChangedListener {
             val maxDistance = binding.imgTop.height
@@ -24,6 +26,7 @@ class Library : AppCompatActivity() {
             val alphaFactor: Float = ((movement * 1.0f) / (maxDistance - topBar.height))
             if (movement in 0..maxDistance) {
                 topBar.alpha = alphaFactor
+                textBar.alpha = alphaFactor
             }
         }
 
