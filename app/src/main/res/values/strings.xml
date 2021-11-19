@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Corn Health AI</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</string>
+    </string>
     <string name="lorem_long">Lorem ipsum dolor sit amet, ad oblique pertinax vim, vix ei debet iusto intellegebat, eu eam populo lobortis. Ad qui quaestio abhorreant. Vis ad nobis dolorem, has solum doming latine cu. Vidit putant debitis has te, exerci torquatos cum an. Sit ex quod altera feugiat, melius aperiam id his.
 
-Ei duo munere efficiendi efficiantur. Ex iudico minimum his, vis vide bonorum necessitatibus an. Duo ei prima mucius posidonium, no sea odio malorum interpretaris. Noster nusquam qualisque quo cu, ea pri putent sententiae suscipiantur, mel tota accommodare et. Pri veritus suscipiantur in, enim veniam ne mel, quem dicunt inermis at his. Virtute tincidunt efficiantur eu mei, duo sententiae philosophia reprehendunt id.
-</string>
+        Ei duo munere efficiendi efficiantur. Ex iudico minimum his, vis vide bonorum necessitatibus an. Duo ei prima mucius posidonium, no sea odio malorum interpretaris. Noster nusquam qualisque quo cu, ea pri putent sententiae suscipiantur, mel tota accommodare et. Pri veritus suscipiantur in, enim veniam ne mel, quem dicunt inermis at his. Virtute tincidunt efficiantur eu mei, duo sententiae philosophia reprehendunt id.
+    </string>
 
     <string name="lorem_short">
         Ad vero quidam sit. Usu at fierent singulis mediocritatem, et qui vivendo posidonium, cum ex erant populo. Tale diam ullamcorper vel ex. Ei sea partiendo disputationi, cu sed suas dicam. Eu nam eros prodesset intellegebat.
@@ -18,4 +18,5 @@ Ei duo munere efficiendi efficiantur. Ex iudico minimum his, vis vide bonorum ne
     <string name="field_monitoring">
         Monitor presence of pests and signs of diseases and provide action early to avoid fatal damage to your crops.
     </string>
+
 </resources>

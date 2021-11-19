@@ -24,11 +24,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".TestUI">
-
-        </activity>
+            android:name=".AboutUs"
+            android:exported="false" />
         <activity
-            android:name=".Library"
+            android:name=".library.LibraryPestDiseaseInfo"
+            android:exported="false" />
+        <activity android:name=".TestUI"></activity>
+        <activity
+            android:name=".library.Library"
             android:exported="false" />
         <activity
             android:name=".Settings"

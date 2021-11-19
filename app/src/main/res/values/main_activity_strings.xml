@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="detect_insect">
+        Identify corn insect pests
+    </string>
+    <string name="detect_disease">
+        Identify corn leaf diseases
+    </string>
+</resources>

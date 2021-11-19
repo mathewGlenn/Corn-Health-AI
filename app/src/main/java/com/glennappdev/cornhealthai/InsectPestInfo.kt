@@ -191,7 +191,7 @@ class InsectPestInfo : AppCompatActivity() {
             alertDialog.show()
         }
 
-        binding.btnBack.setOnClickListener{
+        binding.btnBack.setOnClickListener {
             finish()
         }
     }

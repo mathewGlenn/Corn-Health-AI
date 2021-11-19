@@ -3,13 +3,8 @@ package com.glennappdev.cornhealthai
 import android.content.Intent
 import android.os.Bundle
 import android.text.SpannableString
-import android.text.SpannableStringBuilder
-import android.text.method.LinkMovementMethod
 import android.text.util.Linkify
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.glennappdev.cornhealthai.databinding.ActivityLeafDiseaseInfoBinding
@@ -43,7 +38,7 @@ class LeafDiseaseInfo : AppCompatActivity() {
         }
 
         val intent = intent
-        val prediction = intent.getStringExtra("pred").toString()
+        val prediction = intent.getStringExtra("pred")
 
         binding.label.text = prediction
 
@@ -125,7 +120,7 @@ class LeafDiseaseInfo : AppCompatActivity() {
             alertDialog.show()
         }
 
-        binding.btnBack.setOnClickListener{
+        binding.btnBack.setOnClickListener {
             finish()
         }
 

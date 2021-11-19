@@ -85,10 +85,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginEnd="30dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Identify corn leaf diseases"
-                    android:textAlignment="center"
+                    android:id="@+id/txtLeafDisease"
+                    android:text="@string/detect_disease"
+                    android:layout_marginHorizontal="30dp"
                     android:textColor="#ffffff"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -121,13 +121,13 @@
                     android:src="@drawable/ic_insect" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginEnd="30dp"
+                    android:id="@+id/txtInsectPest"
+                    android:layout_marginHorizontal="30dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Identify corn insect pests"
-                    android:textAlignment="center"
+                    android:text="@string/detect_insect"
                     android:textColor="#ffffff"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -154,7 +154,7 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_gravity="center_vertical"
+                    android:layout_gravity="center"
                     android:layout_marginStart="30dp"
                     android:adjustViewBounds="true"
                     android:src="@drawable/ic_book" />
@@ -163,10 +163,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginEnd="30dp"
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Library"
-                    android:textAlignment="center"
+                    android:layout_marginHorizontal="30dp"
                     android:textColor="#ffffff"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -201,10 +200,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginEnd="30dp"
+
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Settings"
-                    android:textAlignment="center"
+                    android:layout_marginHorizontal="30dp"
                     android:textColor="#ffffff"
                     android:textSize="20sp" />
             </LinearLayout>
