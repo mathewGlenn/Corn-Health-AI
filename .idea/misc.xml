@@ -22,6 +22,7 @@
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_tap_image.xml" value="0.16510416666666666" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/oval.xml" value="0.24351851851851852" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/round_corner_button.xml" value="0.2703125" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/splash_background.xml" value="0.2890625" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/tab_layput_bg.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/tab_selector.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/tabs_selector.xml" value="0.2703125" />
@@ -37,6 +38,7 @@
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_prediction_info.xml" value="0.2" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_prediction_result.xml" value="0.2" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_settings.xml" value="0.264" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_test_ui.xml" value="0.2" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_view_images_full.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/chemicals_info_dialog.xml" value="0.264" />
