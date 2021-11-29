@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="natural_enemies_aw">
+        May dalawang kilalang natural enemies na epektibo sa pag kontrol ng Armyworms: parasitoid wasps at trichogramma wasps.
+        Ang mga Wasps na ito ay nangingitlog sa loob ng itlog ng mga moths kagaya ng armyworm at kaya nitong tapusin ang Life-cycle  nito na mabisang pagtigil sa pagdami nito.
+
+    </string>
+    <string name="natural_enemies_ca">
+        Marami ang Predators at parasites ang umaatake sa corn leaf aphids. Kagaya ng Lady Bird Beetles. Ang ibang mga parasitic wasps ay inaatake ang mga corn aphids at nagingitlog ito
+        sa kanilang mga katawan at kalaunan ay mapipisa itoat magiging Parasitic Larvae na kinokonsumo ang Aphids  mula sa loob.
+    </string>
+    <string name="natural_enemies_cb">
+      Kabilang sa Predators na maaring makaapekto sa mga Larvae ay ang mga ladybird beetles.
+        Ang isang parasitic wasp na kayang puksain ang corn borers  ay ang Trichogramma. Ang wasp na ito ay naghahanap ng host ng kanilang itlog at kaya nitong makasira ng corn borer eggs, na nagdudulot ng pagpigil sa pagpapadami ng kanilang populasyon.
+
+    </string>
+    <string name="natural_enemies_fb">
+        Sa natural enemies ng corn flea beetles ay kasama ang Braconid Wasps at Tachinig Flies.  Ang kanilang larval stage ay kinokonsumo ang mga flea beetles, samantalang ang mga nasa adult stage ay kinakain ang mga nectar o kaya naman ay mga pollen.
+        Ang mga palaka ay kumakain din ng flea beetles.
+    </string>
+    <string name="natural_enemies_wg">
+        Spiders, mites, predatory at parasitic beetles, wasps at flies ay mga dokumentadong natural enemies ng white grubs ngunit ang pangunahing predator ng white grubs ay ang mga ibon.
+    </string>
+    <string name="natural_enemies_ww">
+        Ang wireworms ay mayroon lamang kakaunting natural enemies, karamihan ay mga ground beetles at rove beetles na kumokonsumo ng mga wireworms. Ang larvae ng stiletto flies ay kilala din bilang predators ng wireworms.
+    </string>
+</resources>

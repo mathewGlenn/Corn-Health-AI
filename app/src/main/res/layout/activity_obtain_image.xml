@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/parentLayout"
     android:background="@drawable/gradient_obtain_image"
     tools:context=".ObtainImage">
 
@@ -25,7 +26,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/montserrat_medium"
-        android:text="Tips on capturing image"
         android:textColor="@color/text_black"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,11 +77,12 @@
         app:layout_constraintTop_toTopOf="@id/tipsToClose" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/t_tooFar"
+        android:layout_width="90dp"
+        android:textAlignment="center"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/roboto_regular"
-        android:text="Too far"
         android:textColor="@color/text_black"
         app:layout_constraintEnd_toEndOf="@id/tipsToFar"
         app:layout_constraintStart_toStartOf="@id/tipsToFar"
@@ -89,11 +90,12 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/t_tooClose"
+        android:layout_width="90dp"
+        android:textAlignment="center"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/roboto_regular"
-        android:text="Too close"
         android:textColor="@color/text_black"
         app:layout_constraintEnd_toEndOf="@id/tipsToClose"
         app:layout_constraintStart_toStartOf="@id/tipsToClose"
@@ -101,11 +103,12 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/t_blurredImage"
+        android:layout_width="90dp"
+        android:textAlignment="center"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/roboto_regular"
-        android:text="Blurred image"
         android:textColor="@color/text_black"
         app:layout_constraintEnd_toEndOf="@id/tipsBlur"
         app:layout_constraintStart_toStartOf="@id/tipsBlur"
@@ -125,11 +128,12 @@
         app:layout_constraintEnd_toStartOf="@id/viewGuide" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="90dp"
+        android:textAlignment="center"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/roboto_regular"
-        android:text="Open camera"
+        android:id="@+id/t_open_cam"
         android:textColor="@color/text_black"
         app:layout_constraintEnd_toEndOf="@id/openCamera"
         app:layout_constraintStart_toStartOf="@id/openCamera"
@@ -156,11 +160,13 @@
 
     <TextView
 
-        android:layout_width="wrap_content"
+        android:layout_width="90dp"
+        android:textAlignment="center"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/roboto_regular"
-        android:text="Open gallery"
+
+        android:id="@+id/t_open_gallery"
         android:textColor="@color/text_black"
         app:layout_constraintEnd_toEndOf="@id/openGallery"
         app:layout_constraintStart_toStartOf="@id/openGallery"

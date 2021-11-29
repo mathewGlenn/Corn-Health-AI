@@ -17,13 +17,17 @@ class Library : AppCompatActivity(), View.OnClickListener {
         val view: View = binding.root
         setContentView(view)
 
-        // checked saved locale
+        // check saved locale
         val preferences: SharedPreferences =
             this.getSharedPreferences("LANGUAGE", Context.MODE_PRIVATE)
         val language = preferences.getString("SAVED_LANGUAGE", "en")
         val localeHelper = LocaleHelper()
         val context = localeHelper.setLocale(this, language.toString())
         val resources = context.resources
+
+        binding.txtLeafDiseases.text = resources.getString(R.string.leaf_diseases)
+        binding.txtInsects.text = resources.getString(R.string.insect_pests)
+
 
         // set opacity of cardBar to 0
         val topBar = binding.cardBar
@@ -54,6 +58,9 @@ class Library : AppCompatActivity(), View.OnClickListener {
         binding.txtBesideCornIcon.text = resources.getString(R.string.library_txt)
         binding.txtInfoFieldMonitoring.text = resources.getString(R.string.field_monitoring)
 
+        binding.btnBack.setOnClickListener {
+            finish()
+        }
     }
 
     override fun onClick(card: View?) {

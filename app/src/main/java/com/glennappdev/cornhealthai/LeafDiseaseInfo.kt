@@ -1,6 +1,8 @@
 package com.glennappdev.cornhealthai
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.util.Linkify
@@ -37,11 +39,22 @@ class LeafDiseaseInfo : AppCompatActivity() {
             }
         }
 
+        // checked saved locale
+        val preferences: SharedPreferences =
+            this.getSharedPreferences("LANGUAGE", Context.MODE_PRIVATE)
+        val language = preferences.getString("SAVED_LANGUAGE", "en")
+        val localeHelper = LocaleHelper()
+        val context = localeHelper.setLocale(this, language.toString())
+        val resources = context.resources
+
         val intent = intent
         val prediction = intent.getStringExtra("pred")
 
         binding.label.text = prediction
 
+        binding.tDesc.text = resources.getString(R.string.description)
+        binding.tSymptoms.text = resources.getString(R.string.symptoms)
+        binding.tMgmtStrat.text = resources.getString(R.string.mgmt_strat)
         val chem_control: String
 
         when (prediction) {

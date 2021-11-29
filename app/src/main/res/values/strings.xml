@@ -19,4 +19,71 @@
         Monitor presence of pests and signs of diseases and provide action early to avoid fatal damage to your crops.
     </string>
 
+    <string name="tips_obtain_image">
+        Tips on capturing image
+    </string>
+
+    <string name="tips_too_far">
+        Too far
+    </string>
+
+    <string name="tips_too_close">
+        Too close
+    </string>
+
+    <string name="tips_blurred_img">
+        Blurred image
+    </string>
+
+    <string name="open_cam">
+        Open camera
+    </string>
+    <string name="open_gallery">
+        Open gallery
+    </string>
+    <string name="check_prediction_damage_leaf">
+        Please check if the predicted disease match the damage in your crop.
+    </string>
+    <string name="check_prediction_damage_insect">
+       Please check if the predicted insect match the insect in your crop.
+    </string>
+
+    <string name="result">
+        Result
+    </string>
+
+    <string name="description">
+        Description
+    </string>
+
+    <string name="damage">
+        Damage
+    </string>
+
+    <string name="mgmt_strat">
+        Management Strategy
+    </string>
+
+    <string name="symptoms">
+        Symptoms
+    </string>
+
+    <string name="preventive_measures">
+        Preventive Measures
+    </string>
+    <string name="treatment">
+        Treatment
+    </string>
+
+    <string name="leaf_diseases">
+        Leaf Diseases
+    </string>
+    <string name="insect_pests">
+        Insect Pests
+    </string>
+
+    <string name="concealed">
+        Concealed insect
+    </string>
+
 </resources>

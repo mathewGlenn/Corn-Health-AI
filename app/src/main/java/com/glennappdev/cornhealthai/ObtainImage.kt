@@ -1,7 +1,9 @@
 package com.glennappdev.cornhealthai
 
 import android.content.ComponentName
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Bitmap
 import android.graphics.ImageDecoder
 import android.net.Uri
@@ -44,20 +46,41 @@ class ObtainImage : AppCompatActivity() {
         val view: View = binding.root
         setContentView(view)
 
+        // check saved locale
+        val preferences: SharedPreferences =
+            this.getSharedPreferences("LANGUAGE", Context.MODE_PRIVATE)
+        val language = preferences.getString("SAVED_LANGUAGE", "en")
+        val localeHelper = LocaleHelper()
+        val context = localeHelper.setLocale(this, language.toString())
+        val resources = context.resources
+
+
+        binding.txtTips.text = resources.getString(R.string.tips_obtain_image)
+        binding.tTooFar.text = resources.getString(R.string.tips_too_far)
+        binding.tTooClose.text = resources.getString(R.string.tips_too_close)
+        binding.tBlurredImage.text = resources.getString(R.string.tips_blurred_img)
+        binding.tOpenCam.text = resources.getString(R.string.open_cam)
+        binding.tOpenGallery.text = resources.getString(R.string.open_gallery)
         // transparent status bar using laobie/StatusBarUtil
         StatusBarUtil.setTransparent(this)
+
 
         val utils = Utils()
         val intent = intent
         val model = intent.getStringExtra("model").toString()
 
-
-
         if (model == "leaf_disease") {
             classifier = Classifier(utils.assetFilePath(this, "ghostnet_leaf_diseases.pt"))
         } else {
             classifier = Classifier(utils.assetFilePath(this, "mixnet_insect_pest.pt"))
+            binding.tipsCorrect.setImageResource(R.drawable.tips_correct_insect)
+            binding.tipsToFar.setImageResource(R.drawable.tips_too_far_insect)
+            binding.tipsToClose.setImageResource(R.drawable.tips_concealed_insect)
+            binding.tipsBlur.setImageResource(R.drawable.tips_blurred_insect)
+            binding.parentLayout.setBackgroundResource(R.drawable.gradient_obtain_image_yellow)
+            binding.tTooClose.text = resources.getString(R.string.concealed)
         }
+
 
         binding.openCamera.setOnClickListener {
             onLaunchCamera()

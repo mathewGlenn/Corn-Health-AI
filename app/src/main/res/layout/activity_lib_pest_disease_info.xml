@@ -110,212 +110,221 @@
                 app:layout_constraintBottom_toBottomOf="@id/carouselView" />
 
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:background="@drawable/bg_round_top"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_top"
+                app:layout_constraintTop_toBottomOf="@id/lineOnCarousel">
+
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="label"
+
+                    android:textColor="@color/text_black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/t_sci_cause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="scientific name"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@id/sci_cause"
+                    app:layout_constraintTop_toBottomOf="@id/sci_cause" />
+
+                <TextView
+                    android:id="@+id/sci_cause"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Scientific name / cause"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="@id/label"
+                    app:layout_constraintTop_toBottomOf="@id/label" />
+
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/lineOnCarousel">
+                    android:layout_marginTop="60dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/sci_cause">
 
                     <TextView
-                        android:id="@+id/label"
+                        android:id="@+id/t_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Description"
+                        android:textColor="@color/text_black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="20dp"
+                        android:text="@string/lorem"
+                        android:textColor="@color/text_black" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/dotted_line"
+                        android:layerType="software" />
+
+
+                    <TextView
+                        android:id="@+id/t_damage_symptom"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
-                        android:fontFamily="@font/montserrat_bold"
-                        android:text="label"
-
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Damage"
                         android:textColor="@color/text_black"
-                        android:textSize="30sp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
+                        android:textSize="20sp" />
 
                     <TextView
-                        android:id="@+id/t_sci_cause"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_medium"
-                        android:text="scientific name"
-                        android:textColor="@color/gray"
-                        android:textSize="15sp"
-                        app:layout_constraintStart_toStartOf="@id/sci_cause"
-                        app:layout_constraintTop_toBottomOf="@id/sci_cause" />
-
-                    <TextView
-                        android:id="@+id/sci_cause"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:fontFamily="@font/roboto_medium"
-                        android:text="Scientific name / cause"
-                        android:textColor="@color/text_black"
-                        android:textSize="17sp"
-                        android:textStyle="italic"
-                        app:layout_constraintStart_toStartOf="@id/label"
-                        app:layout_constraintTop_toBottomOf="@id/label" />
-
-
-                    <LinearLayout
+                        android:id="@+id/damage_symptoms"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="60dp"
-                        android:orientation="vertical"
-                        app:layout_constraintTop_toBottomOf="@id/sci_cause">
-
-                        <TextView
-
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat_semi_bold"
-                            android:text="Description"
-                            android:textColor="@color/text_black"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:id="@+id/desc"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/roboto_regular"
-                            android:paddingHorizontal="20dp"
-                            android:paddingTop="10dp"
-                            android:paddingBottom="20dp"
-                            android:text="@string/lorem"
-                            android:textColor="@color/text_black" />
+                        android:fontFamily="@font/roboto_regular"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="20dp"
+                        android:text="@string/lorem_short"
+                        android:textColor="@color/text_black" />
 
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:background="@drawable/dotted_line"
-                            android:layerType="software" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/dotted_line"
+                        android:layerType="software" />
 
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
-                            android:fontFamily="@font/montserrat_semi_bold"
-                            android:text="Damage"
-                            android:id="@+id/t_damage_symptom"
-                            android:textColor="@color/text_black"
-                            android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/t_prev_measures"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Preventive Measures"
+                        android:textColor="@color/text_black"
+                        android:textSize="20sp" />
 
-                        <TextView
-                            android:id="@+id/damage_symptoms"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/roboto_regular"
-                            android:paddingHorizontal="20dp"
-                            android:paddingTop="10dp"
-                            android:paddingBottom="20dp"
-                            android:text="@string/lorem_short"
-                            android:textColor="@color/text_black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Cultural practices"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp" />
 
+                    <TextView
+                        android:id="@+id/preventive_measures"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="20dp"
+                        android:text="@string/lorem_short"
+                        android:textColor="@color/text_black" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:background="@drawable/dotted_line"
-                            android:layerType="software" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/dotted_line"
+                        android:layerType="software" />
 
+                    <TextView
+                        android:id="@+id/t_treatment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Treatment"
+                        android:textColor="@color/text_black"
+                        android:textSize="20sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
-                            android:fontFamily="@font/montserrat_semi_bold"
-                            android:text="Preventive Measures"
-                            android:textColor="@color/text_black"
-                            android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/biological_organic_control"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Biological control"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat_semi_bold"
-                            android:text="Cultural practices"
-                            android:textColor="@color/text_black"
-                            android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/content_biological_organic_control"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/lorem_short"
+                        android:textColor="@color/text_black" />
 
-                        <TextView
-                            android:id="@+id/preventive_measures"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/roboto_regular"
-                            android:paddingHorizontal="20dp"
-                            android:paddingTop="10dp"
-                            android:paddingBottom="20dp"
-                            android:text="@string/lorem_short"
-                            android:textColor="@color/text_black" />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:background="@drawable/dotted_line"
-                            android:layerType="software" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
-                            android:fontFamily="@font/montserrat_semi_bold"
-                            android:text="Treatment"
-                            android:textColor="@color/text_black"
-                            android:textSize="20sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Chemical control"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
-                            android:fontFamily="@font/montserrat_semi_bold"
-                            android:text="Biological control"
-                            android:id="@+id/biological_organic_control"
-                            android:textColor="@color/text_black"
-                            android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/chemical_control"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:justificationMode="inter_word"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="20dp"
+                        android:text="@string/lorem_short"
+                        android:textColor="@color/text_black" />
 
-                        <TextView
-                            android:id="@+id/content_biological_organic_control"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/roboto_regular"
-                            android:paddingHorizontal="20dp"
-                            android:paddingTop="10dp"
-                            android:paddingBottom="10dp"
-                            android:text="@string/lorem_short"
-                            android:textColor="@color/text_black" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/montserrat_semi_bold"
-                            android:text="Chemical control"
-                            android:textColor="@color/text_black"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:id="@+id/chemical_control"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/roboto_regular"
-                            android:paddingHorizontal="20dp"
-                            android:paddingTop="10dp"
-                            android:paddingBottom="20dp"
-                            android:text="@string/lorem_short"
-                            android:textColor="@color/text_black" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="70dp" />
-                    </LinearLayout>
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

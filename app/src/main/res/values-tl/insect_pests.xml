@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--________________ Army worm _________________-->
+
+    <string name="name_aw">
+        Army Worm
+    </string>
+    <string name="sci_name_aw">
+        Spodoptera frugiperda
+    </string>
+    <string name="desc_aw">
+        Ang mga uod ay humahaba ng humigit-kumulang 2 pulgada at ang mga may markang green, brown, o black colors na mga guhitan, na may halong maiitim na parte sa gilid.
+        Sa itaas ng tiyan ay may marka na may dalawang pares ng itim na tuldok na may mga balahibo. Ang harapan ng maitim na ulo ay may baliktd na “Y” na nakaukit.
+        Ang Adult Moths ay mayroong dark gray na pakpak na may Light and Dark sa mga parte nito. Ang kanilang pakpak ay nasa likod ng kanilang katawan kapag nagpapahinga.
+        Ang nakabukang mga pakpak naman ay umaabot ng 1 ½ na pulgada. Ang likod ng pakpak ay kulay puti.
+
+    </string>
+    <string name="damage_aw">
+        Ang pinagkainan ng Armyworm ay nagdudulot ng punit-punit na dahon, na may  Defoliation na nagaganap mula sa gilid ng dahon mula sa gitnang bahagi nito.
+        Ang pinsala ay maaring maging malawak na karamihan sa mga pananim, maliban sa kalagitnaang parte at tangkay ay nakonsumo na.
+	    Ang mga may malalang pinsala ay maaring i-Recover, ngunit, maaari lamang itong maagapan kung ang Growing point ay hindi pa napinsala
+
+    </string>
+    <string name="mgmt_aw">
+        Kontorladong mga aksyon sa mais ay kinakailangan kung ang mga armyworms ay nasaa ½ at 1/3 na pulgada at tumatayang 35% ang napinsala o 50% ay nakitaan na ng sira sa mga pananim.
+        Mayroong Pheromone Traps upang makitaan ng aktibidad ng Adult Armyworm.
+    </string>
+
+    <!--________________ Corn aphid _________________-->
+
+    <string name="name_ca">
+        Corn Aphid
+    </string>
+    <string name="sci_name_ca">
+        Rhopalosiphum maidis
+    </string>
+
+    <string name="desc_ca">
+        Ang Corn Leaf Aphids ay kulay blue-green o gray, malambot ang katawan ,  pabilog ang hugis na umaabot sa laki ng Pinhead [1/6 inch (1.6mm) in length].
+        Ang mga babaeng Corn Leaf Aphids ay hindi nangingitlog, na hindi kagaya ng mga ibang insekto, at ito ay nanganganak ng maliliit na Aphids. Karaniwan sa mga ito ay mga walang pakpak.
+        Ngunit sa pagdami ng populasyon nito ay maaari silang mag develop ng mga pakpak. Ang mga ito ay nagagamit nila upang makabuo ng bagong kolonya sa mga tanimang hindi pa napipinsala.
+
+    </string>
+
+    <string name="damage_ca">
+        Ang mga dahoon ng mais na malalang napinsala ay maaring malanta, mamaluktok at magkakaroon ng yellow patches discoloration. Kapag ang tassle at ang mga silks ay napalibutan ng Honeydew,
+        nauudlot ang pollination process nito. At ang malalang pinsala na dulot ng pagkain ng Aphid sa dahon ay nagbubunga ng hindi kumpletong pagdevelop ng butil ng mais  o barren ears.
+    </string>
+    <string name="mgmt_ca">
+        Bago ang Tasseling – ang pagkontrol ng Corn Leaf Aphids  ay epektibo sa 2-3 weeks. Ito ay bihira na pinapayo sa mga ganitong mga panahon. Sa panahon ng Pollen Shed – ang pagkontrol nito ay
+        hindi kinakailangan kung ang tassels ay lumilitaw na. Minsan, ang Aphids ay maaring makisabay sa pollination at ang paggamot dito ay ginagarantiya.
+    </string>
+
+    <!--________________ Corn borer _________________-->
+    <string name="name_cb">
+        Corn Borer
+    </string>
+    <string name="sci_name_cb">
+        Ostrinia nubilalis
+    </string>
+    <string name="desc_cb">
+Ang mga maliliit na uod na may itim na ulo at faint dark spots . Sinusuksok nila ang kanilang katawan sa tangkay ng maliliit na mga mais at kasabay nito sa paglaki ng pananim. Ang karaniwang senyales ng Borer ay
+        mga butas-butas, kadalasan kapag ang mais ay hanggang baywang pa lamang ang laki. Ang Corn Borer ay Larvae  ng beige moth.
+    </string>
+    <string name="damage_cb">
+        Ang pinsala ng Corn Borer ay nakapanghihina at nakapgpapabagal ng paglaki ng pananim. Kadalasan sa mga may malalang pinsala ay napuputol at natutumba. Kapag ang mature
+        Corn ears ay napinsala ay madali itong mabulok.
+
+    </string>
+    <string name="mgmt_cb">
+        Ang pag spray sa mga damo ng “Burn Down” herbicide at ang Residual Insecticide bago ang pagtatanim ay nakakaakit ng borers na nagdudulot ng pagkaexpose nilang lahat sa insecticide. Ang technique na ito ay maaring gamitin sa no-till fields na may history ng common stalk borer’s problems.
+    </string>
+
+    <!--________________ Flea beetle _________________-->
+    <string name="name_fb">
+        Flea Beetle
+    </string>
+    <string name="sci_name_fb">
+        Chaetocnema pulicaria
+    </string>
+    <string name="desc_fb">
+        Ang Corn Flea Beetles ay maliliit, makislap, at kulay itim na tumatayang umaabot ng 1/16 na pulgada, na may malalaking binti. Ang mga Adult Corn Flea Beetles ay kilala sa abilidad na kayang tumalon ng malayo kapag naiistorbo.
+        Ang kanilang uod ay nasa habang 1/6 inches at karaniwan sa kanilang katawan ay non-pigmented. Tanging ang prothorax at ang hulihang bahagi ng tiyan ang medyo maitim.
+    </string>
+    <string name="damage_fb">
+
+        Maliit lamang ang kaalaman tungkol sa pinsala na dulot ng mga uod na ito, ngunit ang pinsala ng Adults ay madaling Makita. Ang Adult Corn Flea Beetle ay pinipinsala ang pananim sa pamamagitan ng
+        pag tanggal ng Leaf tissue at ang pag transmit ng Pathogenic bacteria. Ang pinsala nito ay nagpapakita ng gasgas sa itaas at ibabang bahagi ng dahon, karaniwan ay nasa katapat ng ugat sa dahon nito.
+        Kinakain nila ang itaas at ibabang parte ng dahon ngunit hindi nila kinokonsumo ang lahat ng dahon na nag iiwan ng markang gasgas o kaya naman ay Windowpane Effect na bihirang nagreresulta ng economic injury.
+        Ang malalang pagkonsumo nito ay nagreresulta din ng Skeletonization o ang pagkawala  ng dahon at pagkamatay ng Seeding.
+
+    </string>
+    <string name="mgmt_fb">
+Ang pagkontrol ay maaring makatwiran sa commercial corn kapag may mga lima o higit pang beetles sa bawat tanim bago ang 4-leaf stage. Kung ang infestation ay malubha na at ang ibang mga pananim ay namamatay, o kung kalahati sa dahon ay namumutla, ay maaari pa itong magamot
+    </string>
+
+    <!--________________ White grub _________________-->
+    <string name="name_wg">
+        White Grub
+    </string>
+    <string name="sci_name_wg">
+        Holotrichia serrata
+    </string>
+    <string name="desc_wg">
+      Umaabot ng ¼ hanggang 1 pulgada (6-25mm) haba ang mga ”Grubs”, ito ay kulay puti na may brown heads at mayroong 6 na mga paa. Ang kanilang katawan ay karaniwang nakakurba na “C” ang hugis.
+    </string>
+    <string name="damage_wg">
+      Ang White grubs ay naninirahan sa ilalim ng lupa at kinakain nito ang mga ugat ng halaman. Ang White grubs ay nagdudulot ng pagkabansot, nutritional deficiency, at ng pagkatumba ng halaman.
+        Ang mais na may malalang putol na ugat ay madaling mabunot. Ang uod nito, lalo na sa mas matatandang Grubs ay kumokonsumo ng mas mabilis at madali lang itong lumipat sa iba’t-ibang ugat sa isang hilera.
+    </string>
+    <string name="mgmt_wg">
+       Ang dalawa o higit pang mga White grubs bawat cubic foot ng lupa ay maaring mag sanhi ng problema. Ang mga problema nito ay nabanggit sa mga taniman ng mais, Soybean, mga bukid na may dayami o pastulan,
+        o mga bukid na may problema sa mga damuhan noong mga nakaraang mga taon. Ang mga nabanggit na mga bukid ay dapat ma-monitor ng maigi habang nagbubungkal ng lupa upang makakita ng presenya ng Grubs. Ang
+        aktibidad ng mga ibon sa taniman ay maaring senyales ng presensya ng grubs. Ang malalang pinsala ay bihira lamang, at karaniwang nangyayari ito kung malaki na ang populasyon ng Grubs.
+    </string>
+
+    <!--________________ Wire worm _________________-->
+    <string name="name_ww">
+        Wireworm
+    </string>
+    <string name="sci_name_ww">
+        Melanotus communis Gyllenhal
+    </string>
+    <string name="desc_ww">
+        Ang mga Wireworms ay payat, matigas ang katawan, tila parang wire na uod na kayang magdulot ng pinsala sa maliliit na pananim. Sila ay makintab ng kulay dilaw o brown na umaabot ng ½ hanggang 1 ½ na pulgada (13-38 mm long).
+        Ang life cycle ng ¬Wireworm Species na ito ay nagtatagal ng 4-7 na taon, ang mga uod nito ay maaring magdulot ng ilang mga pinsala sa susunod pang mga tanim.
+
+        Tinatawag na Click Beetles ang Adult na Wireworms. Ang pangalan nila ay nahango sa tunog na kanilang ginagawa habang sinusubukan nilang itama ang kanilang sarili kapag sila ay nahuhulog o nababalktad.
+
+    </string>
+    <string name="damage_ww">
+        Ang mga uod ng Wireworms ay kumakain ng germ sa butil ng mais o sa mga butil na may butas at nag iiwan na lamang ito ng butil na walang laman. Ang pinsalang ito ay nageresulta ng espasyo sa mga hilera ng mais. Maari ding maputol ng mga Wireworms ang maliliit na ugat o mga ibang parte ng tangkay ng maliliit na mais.
+
+        Ang pinsala ng mga ito ay nangyayari sa mga unang yugto ng panahon ng mga pananim. Ang karaniwang mga pinsala ay nangyayari kapag ang mais ay naitanim ng maaga at ang klima ay malamig na nagreresulta ng mabagal na pagsibol ng binhi.
+        Ang infestation ng mga uod na ito ay kadalasang napapansin sa mga basang lupa ng mahabang panahon. Ang wireworms ay lumilipat pailalim ng lupa kung ito ay mainit, at hindi na makapinsala pa ng paglaki ng mga pananim.
+
+    </string>
+    <string name="mgmt_ww">
+        Karamihan sa mga Insecticides ay may mga sangkap na para sa wireworm control at maaring gamitin sa pre-plant o planting-time aplications. Maari din makatulong ang paggamit ng Seed-Treatment kung mababa ang bilang ng populasyon ng mga ito. Walang Insecticides ang magagamit para sa rescue treatments.
+        Kung ang taniman ng mais ay muling tinaniman dahil sa wireworms at ang mga uod ay nandoon padin, maaring gumamit ng Soil Insecticide o Soil Treatment dipende sa dami ng populasyon ng Wireworm.
+    </string>
+</resources>

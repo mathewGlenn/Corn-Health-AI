@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ...................................Gray Leaf Spot................................... -->
+
+    <string name="name_gls">
+        Gray Leaf Spot
+    </string>
+
+    <string name="cause_gls">
+        Fungus Cercospora zeae-maydis
+    </string>
+
+    <string name="desc_gls">
+         Ang Gray leaf spot ay pumapabor sa mahalumigmig na panahon. Karagdagan pa nito, ito din ay pinapaboran sa malimit na pagbubungkal. Ang Airborne spores nito ay kumakalat sa local at regional mula sa mga Corn Debris.
+    </string>
+
+    <string name="symptoms_gls">
+        Ang mga sintomas ng Gray Leaf Spots  ay karaniwang makikita sa ibabang parte ng dahon.
+        Nagsisimula ito sa maliit na tuldok na may kulay dilaw sa paligid. Ang mga sugat nito ay
+        humahaba sa paglipas ng panahon na nagiging maputlang brown o gray ang kulay at may pahaba
+        at pudpod na hugis. Ang mga sugat na ito ay maihahalintulad sa pagkakaroon ng imahe ng posporo.
+        Ang mga dahon nito ay nagiging grayish dahil sa presensya ng Fungal Spores.
+
+    </string>
+
+    <string name="mgmt_gls">
+        Ang pag aasikaso ng Gray leaf spot ay kasama ang pagbubungkal, Crop rotation at pagtatanim ng resistant hybrids.
+        Kinakailangan ang paggamit ng Fungicides para maiwasan ang pagkawala kung ang mga pananim ay nahawaan ng maaga at kung may
+        environmental favor disease. Ang mga sugat nito ay maaring maging sanhi ng pagka lanta ng mga dahon ng mga mais.
+    </string>
+
+
+
+
+    <!-- ...................................Northern Corn Leaf Blight................................... -->
+
+    <string name="name_nlb">
+        Northern Leaf Blight
+    </string>
+
+    <string name="cause_nlb">
+        Fungus Exerohilum turicum
+    </string>
+
+    <string name="desc_nlb">
+
+        Kung ang mga sugat ay nagsimula ng maaga (bago ang silking), maaring magresulta ng crop loss.  Ang late infection naman ay maaring may mababang impact sa mga pananim.
+        Ang NLB ay umaayon sa malamig na klima. Ang Spores ng fungus  ay ang dahilan ng sakit na ito na pwedeng mailipat sa malalayong distansya sa pamamagitan ng hangin.
+
+
+    </string>
+
+    <string name="symptoms_nlb">
+
+        Ang kulay-balat na sugat  ng Northern corn leaf blight ay manipis at patulis na oblong na umaabot ng 1-6 na pulgada.
+        Ang mga sugat ay nasa gilid ng dahon mula sa simula ng mababang parte patungong itaas na parte ng dahon. Maaari silang magdikit-dikit at matakpan ang kabuuan ng dahon.
+        Ang spores nito ay nagpo-Produce sa ilalim na parte ng dahon na nagbibigay ng appearance na dusty green fuzz.
+
+
+    </string>
+
+    <string name="mgmt_nlb">
+       Ang Northern Corn Leaf Blight ay maaring ma-kontrol gamit ang Resistant Hybrids. Karagdagan nito, ang napapanahong pagtatanim ay nakakatulong upang maiwasan ang mga sakit na umaayon dito.
+    </string>
+
+
+
+
+    <!-- ...................................Common Rust................................... -->
+    <string name="name_cr">
+        Common Rust
+    </string>
+
+    <string name="cause_cr">
+        Fungus Puccinia sorghi
+    </string>
+
+    <string name="desc_cr">
+       Limitado ang impact ng late na pagkakaron ng impeksiyon ngcommon rust sa mga ani.
+        Nangyayari ang Disease development sa malamig at mahalumigmig na klima (60-70°F)
+
+    </string>
+
+    <string name="symptoms_cr">
+         Ang mga sintomas ng Common Rust ay kalimitang nagpapakita pagkatapos ng SIlking. Maliit, pabilog o pahaba na kulay brown na pustules sa ibabaw ng dahon at ibang mga parte ng halaman.
+        Sa pag Mature ng mga pustules ay nagiging kulay itim ang mga ito.
+        Kung ang sakit ay Malala, ang dahon ay maaring maging kulay dilaw at maagang mamamatay.
+
+    </string>
+
+    <string name="mgmt_cr">
+
+        Ang paggamit ng resistant hybrids ay isa sa pangunahing istratehiya sa  pag kontrol ng Common Rust.
+        Ang napapanahon na pagtatananim ng mais bago ang growing season ay nakakatulong upang maiwasan ang Inoculum Level o environmental condition na nagsasanhi ng pagbuo ng mga iba’t-ibang mga sakit.
+
+    </string>
+
+</resources>

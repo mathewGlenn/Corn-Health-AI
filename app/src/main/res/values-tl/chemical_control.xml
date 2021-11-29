@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="chem_control_gls">
+        Kung 50% sa mga pananim na mais ay nagpapakita ng senyales ng Gray Leaf Spot bago ang Tasseling, ang pananim ay madaling kapitan ngunit kaya pa itong masolusyunan ng Fungicides.
+        Ang Fungicides na maaaring gamitin ay mga produktong may Active Ingredient na CHLOROTHALONIL o PYRACLOSTROBIN.
+
+    </string>
+
+    <string name="chem_control_cr">
+        Nakokontrol ang Common Rust gamit ang Fungicides, ngunit tamang timing sa pag-aaply nito ay mahalaga. Para sa mas magandang resulta, hanggat maari ay maglagay na nito sa pinakamadaling
+        panahon kapag nakitaan na ito ng senyales ng Common Rust. Sa pamamagitan nito ay maiiwasan ang pagkalat ng sakit sa Healthy Leaves. Ang Fungicides na maaaring gamitin ay mga produktong
+        may Active Ingredient na AZOXYSTROBIN, CHLOROTHALONIL, DIFENOCONAZOLE+PROPICONAZOLE, TEBUCONAZOLE, PYRACLOSTROBIN, TEBUCONAZOLE+TRIFLOXYSTROBIN.
+    </string>
+
+    <string name="chem_control_nlb">
+        Ang impeksiyon ng Northern Leaf Blight ay karaniwang nagsisimula sa kapanahunan ng silking at ito ang tamang panahon upang mag-apply ng Fungicide. Napapanahong pag-apply nito ay may malaking
+        epekto sa tanim. Ang aplikasyon nito ay praktikal lamang kung ang sakit ay Malala at lumaganap na.  Ang Fungicides na maaaring gamitin ay mga produktong may Active Ingredient na DIFENOCONAZOLE+PROPICONAZOLE or MANCOZEB.
+
+    </string>
+
+    <string name="chem_control_aw">
+     Kung 75% na sa mga dahoon ng mais ay nagpapakita na ng senyales ng pinsala ng Army Worm, maring gumamit ng pesticides upang maiwasan ang karagdagang pinsala. Ang mga
+        sumusunod ay maaring i-apply : (E,Z) 9,11 TETRADECADIENYL ACETATE, AZADIRACHTIN,
+        CARBOSULFAN, CHLORFENAPYR, CHLORPYRIFOS, CYANTRANILIPROLE, INDOXACARB, NOVALURON+BIFENTHRIN, PYRIDALYL, or SPINETORAM.
+
+
+    </string>
+    <string name="chem_control_ca">
+       Habang ang mga pananim na mais ay nasa Pollen-Sheding, ang Aphids ay maaring makasagabal sa proseso nito at ang mga
+        insekto ay dadami dahil sa nilalabas nitong Honeydew. Kung ang aphids  ay malala na, maaring gumamit ng Pesticides upang maiwasan pa ang pagdami nito. Ang mga sumusunod ay maaring i-apply:
+        DIAZINON, FIPRONIL, LAMBDA-CYHALOTHRIN, LAMBDACHYHALOTHRIN + THIAMETHOXA, MALATHION, PYMETROZINE, or CHLOTHIANIDIN
+
+    </string>
+    <string name="chem_control_cb">
+        Ang mga sumusunod na mga Pesticides ay maaring gamitin upang ma control ang Corn Borer sa pananim: CARBARYL, CHLORANTRANILIPROLE,
+        CHLORPYRIFOS, CYPERMETHRIN, DELTAMETHRIN, DIAZINON, FIPRONIL, FLUBENDIAMIDE, INDOXACARB, LAMBDA-CYHALOTHRIN,
+        LAMBDACYHALOTHRIN+THIAMETHOXA, METHOMYL, or PHENTHOATE
+
+
+    </string>
+    <string name="chem_control_fb">
+     Ang mga sumusnod na Pesticides ay maaaring gamitin upang mabawasan o matanggal ang Corn Flea Beetle sa dahoon ng mais: CARBARYL, PERMETHRIN, SPINOSAD, or BIFENTHRIN.
+
+
+    </string>
+    <string name="chem_control_wg">
+        Upang makontrol ang White Grub sa pamamagitan ng kemikal, ito ang maaring gamiting Pesticides:
+        CHLORPYRIFOS, CHLOTHIANIDIN, CHLORANTRANILIPROLE, IMIDACLOPRID,
+        THIAMETHOXAM, CARBARYL, or TRICHLORFON.
+
+
+    </string>
+    <string name="chem_control_ww">
+        Ang mga sumusunod ay maaring gamitin upang makontrol ang pagdami ng Wireworm: CARBOFURAN, CHLORPYRIFOS, DIAZINON,
+        FIPRONIL, IMIDACLOROPID, PERMETHRIN, or TERBURFOS.
+
+
+    </string>
+
+    <string name="note_when_using_pesticide">
+        Kapag gumagamit ng Pesticides, sunding mabuti ang mga panuto at mga safety precautions.
+    </string>
+    <string name="note_when_using_fungicide">
+        Sundin ang mga direksiyon na nakasaad sa lalagyan kapag gumagamit ng Fungicide.
+    </string>
+
+    <string name="note_natural_enemies">
+        Avoid using practices that would inadvertently destroy beneficial insects such as the natural enemies of pests.
+    </string>
+
+    <string name="pesticide_dialog">
+        Ang mga Agricultural Pesticide na naka lista ditto ay naka rehistro sa Fertilizer and Pesticides Authority (FPA) of the Philippines.
+        Kaya naman, ang mga Pesticide na ito ay legal at puwedeng gamitin. Upang Makita ang buong listahan ng FPA-Registered Agricultural Pesticides /chemicals/herbicides, bisitahin ang
+    </string>
+    <string name="fungicide_dialog">
+        Ang mga Agricultural Fungicide na naka lista ditto ay naka rehistro sa Fertilizer and Pesticides Authority (FPA) of the Philippines.
+        Kaya naman, ang mga Fungicide na ito ay legal at puwedeng gamitin. Upang Makita ang buong listahan ng FPA-Registered Agricultural Pesticides /chemicals/herbicides, bisitahin ang
+    </string>
+    <string name="pesticide_dialog_warning">
+Warning: Pesticides are poisonous. Always read and carefully follow all precautions and directions provided on the container label.
+    </string>
+
+    <string name="fpa_link">
+        https://fpa.da.gov.ph/index.php/information-resources/pesticide-regulatory-data
+    </string>
+</resources>

@@ -1,6 +1,8 @@
 package com.glennappdev.cornhealthai
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
@@ -15,6 +17,14 @@ class PredictionResult : AppCompatActivity() {
         val view: View = binding.root
         setContentView(view)
 
+        // checked saved locale
+        val preferences: SharedPreferences =
+            this.getSharedPreferences("LANGUAGE", Context.MODE_PRIVATE)
+        val language = preferences.getString("SAVED_LANGUAGE", "en")
+        val localeHelper = LocaleHelper()
+        val context = localeHelper.setLocale(this, language.toString())
+        val resources = context.resources
+
         val intent = intent
 
         val model = intent.getStringExtra("model")
@@ -27,6 +37,7 @@ class PredictionResult : AppCompatActivity() {
         binding.img.setImageBitmap(Constants.Image)
 
         binding.txtClassName.text = class1
+        binding.txtResult.text = resources.getString(R.string.result)
 
         val score =
             if (class1Prob == 100f)
@@ -128,11 +139,10 @@ class PredictionResult : AppCompatActivity() {
         val alertDialogBuilder = AlertDialog.Builder(this)
         var dialogMessage = ""
 
-        if (model == "leaf_disease")
-            dialogMessage = "Please check if the predicted disease match the damage in your crop."
+        dialogMessage = if (model == "leaf_disease")
+            resources.getString(R.string.check_prediction_damage_leaf)
         else
-            dialogMessage =
-                "Please check if the predicted insect pest match the description of the insect pest found in your crop."
+            resources.getString(R.string.check_prediction_damage_insect)
 
         alertDialogBuilder.setMessage(dialogMessage)
         alertDialogBuilder.setCancelable(true)
@@ -142,7 +152,7 @@ class PredictionResult : AppCompatActivity() {
             alertDialog.show()
         }
 
-        binding.btnBack.setOnClickListener{
+        binding.btnBack.setOnClickListener {
             finish()
         }
     }

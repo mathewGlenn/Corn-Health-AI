@@ -203,7 +203,6 @@
             android:id="@+id/cardResultD"
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:layout_marginTop="20dp"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardBackgroundColor="#00FFFFFF"

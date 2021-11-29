@@ -19,4 +19,73 @@
     <string name="field_monitoring">
         Obserbahan ang presensya ng mga peste at mga palatandaan ng sakit upang makapaglaan ng aksyon nang maaga para maiwasan ang grabeng pinsala sa iyong mga pananim.
     </string>
+
+    <string name="tips_obtain_image">
+        Payo sa pagkuha ng litrato
+    </string>
+
+    <string name="tips_too_far">
+        Masiyadong malayo
+    </string>
+
+    <string name="tips_too_close">
+        Masiyadong malapit
+    </string>
+
+    <string name="tips_blurred_img">
+        Malabong imahe
+    </string>
+
+    <string name="open_cam">
+        Buksan ang camera
+    </string>
+    <string name="open_gallery">
+        Buksan ang gallery
+    </string>
+
+    <string name="check_prediction_damage_insect">
+        Maaring suriin kung ang itsura ng nahulaang insekto ay tugma sa insektong nasa iyong pananim.
+    </string>
+
+    <string name="check_prediction_damage_leaf">
+        Maaring suriin kung ang itsura ng nahulaang sakit sa dahon ay tugma sa mga pinsala sa iyong pananim.
+    </string>
+
+    <string name="result">
+        Resulta
+    </string>
+
+    <string name="description">
+        Paglalarawan
+    </string>
+
+    <string name="damage">
+        Pinsala
+    </string>
+
+    <string name="mgmt_strat">
+        Diskarte sa Pamamahala
+    </string>
+
+    <string name="symptoms">
+        Sintomas
+    </string>
+
+    <string name="preventive_measures">
+        Mga Hakbang sa Pag-iwas
+    </string>
+    <string name="treatment">
+        Paggamot
+    </string>
+
+    <string name="leaf_diseases">
+        Mga Sakit sa Dahon
+    </string>
+    <string name="insect_pests">
+        Mga Pesteng Insekto
+    </string>
+
+    <string name="concealed">
+        Insekto\'y nakatago
+    </string>
 </resources>

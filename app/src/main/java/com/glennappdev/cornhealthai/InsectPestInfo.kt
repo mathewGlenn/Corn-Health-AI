@@ -1,6 +1,8 @@
 package com.glennappdev.cornhealthai
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.util.Linkify
@@ -35,6 +37,19 @@ class InsectPestInfo : AppCompatActivity() {
                 textBar.alpha = alphaFactor
             }
         }
+
+        // check saved locale
+        val preferences: SharedPreferences =
+            this.getSharedPreferences("LANGUAGE", Context.MODE_PRIVATE)
+        val language = preferences.getString("SAVED_LANGUAGE", "en")
+        val localeHelper = LocaleHelper()
+        val context = localeHelper.setLocale(this, language.toString())
+        val resources = context.resources
+
+        binding.tDesc.text = resources.getString(R.string.description)
+        binding.tDamage.text = resources.getString(R.string.damage)
+        binding.tMgmtStrat.text = resources.getString(R.string.mgmt_strat)
+
 
 
         val intent = intent

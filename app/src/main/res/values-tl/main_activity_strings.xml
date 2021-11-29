@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="detect_insect">
-        Kilalanin ang mga pesteng insekto ng mais
+        Kilalanin ang mga pesteng insekto
     </string>
     <string name="detect_disease">
-        Kilalanin ang mga sakit sa dahon ng mais
+        Kilalanin ang mga sakit sa dahon
     </string>
 </resources>
