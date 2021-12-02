@@ -1,4 +1,4 @@
-package com.glennappdev.cornhealthai
+package com.glennappdev.cornhealthai.prediction
 
 import android.graphics.Bitmap
 import org.pytorch.IValue
@@ -85,11 +85,11 @@ class Classifier(modelPath: String?) {
         val class2Prob = secondMaxValue * 100
 
         if (model == "insect_pest") {
-            predictedClass1 = Constants.INSECT_PEST[class1Index]
-            predictedClass2 = Constants.INSECT_PEST[class2Index]
+            predictedClass1 = ClassNames.INSECT_PEST[class1Index]
+            predictedClass2 = ClassNames.INSECT_PEST[class2Index]
         } else if (model == "leaf_disease") {
-            predictedClass1 = Constants.LEAF_DISEASES[class1Index]
-            predictedClass2 = Constants.LEAF_DISEASES[class2Index]
+            predictedClass1 = ClassNames.LEAF_DISEASES[class1Index]
+            predictedClass2 = ClassNames.LEAF_DISEASES[class2Index]
         }
         return Prediction(predictedClass1, class1Prob, predictedClass2, class2Prob)
     }

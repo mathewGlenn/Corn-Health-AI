@@ -25,12 +25,10 @@
     </string>
 
     <string name="mgmt_gls">
-        Ang pag aasikaso ng Gray leaf spot ay kasama ang pagbubungkal, Crop rotation at pagtatanim ng resistant hybrids.
+        Sa pag aasikaso ng Gray leaf spot ay kasama ang pagbubungkal, Crop rotation at pagtatanim ng resistant hybrids.
         Kinakailangan ang paggamit ng Fungicides para maiwasan ang pagkawala kung ang mga pananim ay nahawaan ng maaga at kung may
         environmental favor disease. Ang mga sugat nito ay maaring maging sanhi ng pagka lanta ng mga dahon ng mga mais.
     </string>
-
-
 
 
     <!-- ...................................Northern Corn Leaf Blight................................... -->
@@ -65,8 +63,6 @@
     </string>
 
 
-
-
     <!-- ...................................Common Rust................................... -->
     <string name="name_cr">
         Common Rust
@@ -91,8 +87,8 @@
 
     <string name="mgmt_cr">
 
-        Ang paggamit ng resistant hybrids ay isa sa pangunahing istratehiya sa  pag kontrol ng Common Rust.
-        Ang napapanahon na pagtatananim ng mais bago ang growing season ay nakakatulong upang maiwasan ang Inoculum Level o environmental condition na nagsasanhi ng pagbuo ng mga iba’t-ibang mga sakit.
+        Ang paggamit ng resistant hybrids ay isa sa mga pangunahing istratehiya sa  pag kontrol ng Common Rust.
+        Ang napapanahon na pagtatananim ng mais bago ang growing season ay nakakatulong upang maiwasan ang Inoculum Level o environmental conditions na nagsasanhi ng pagbuo ng iba’t-ibang uri ng mga sakit.
 
     </string>
 

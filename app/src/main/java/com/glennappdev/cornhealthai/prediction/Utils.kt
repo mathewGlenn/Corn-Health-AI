@@ -1,4 +1,4 @@
-package com.glennappdev.cornhealthai
+package com.glennappdev.cornhealthai.prediction
 
 import android.content.Context
 import android.util.Log

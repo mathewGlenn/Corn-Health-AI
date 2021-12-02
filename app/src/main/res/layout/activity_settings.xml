@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Settings">
+    tools:context=".settings.Settings">
 
     <View
         android:id="@+id/cardBar"
@@ -115,7 +115,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardQuickStart"
+                android:id="@+id/cardHelp"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:clickable="true"
@@ -133,7 +133,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:fontFamily="@font/montserrat_medium"
-                        android:text="Quick start"
+                        android:text="Help"
                         android:textColor="@color/text_black"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -168,7 +168,7 @@
                 android:foreground="?attr/selectableItemBackground"
                 app:cardBackgroundColor="@color/transparent"
                 app:cardElevation="0dp"
-                app:layout_constraintTop_toBottomOf="@id/cardQuickStart">
+                app:layout_constraintTop_toBottomOf="@id/cardHelp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"

@@ -1,10 +1,9 @@
-package com.glennappdev.cornhealthai
+package com.glennappdev.cornhealthai.prediction
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.ScaleGestureDetector
 import android.view.View
-
+import androidx.appcompat.app.AppCompatActivity
+import com.glennappdev.cornhealthai.R
 import com.glennappdev.cornhealthai.databinding.ActivityViewImagesFullBinding
 
 
@@ -20,7 +19,7 @@ class ViewImagesFull : AppCompatActivity() {
         val image = intent.getIntExtra("img", R.drawable.ww1)
 
         binding.image.setImageResource(image)
-        binding.close.setOnClickListener{
+        binding.close.setOnClickListener {
             finish()
         }
     }

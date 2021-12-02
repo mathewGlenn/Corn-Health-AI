@@ -5,10 +5,12 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.glennappdev.cornhealthai.databinding.ActivityMainBinding
 import com.glennappdev.cornhealthai.library.Library
+import com.glennappdev.cornhealthai.prediction.ObtainImage
+import com.glennappdev.cornhealthai.settings.LocaleHelper
+import com.glennappdev.cornhealthai.settings.Settings
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

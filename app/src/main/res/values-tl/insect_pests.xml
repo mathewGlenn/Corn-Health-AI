@@ -3,8 +3,8 @@
 
     <!--________________ Army worm _________________-->
 
-    <string name="name_aw">
-        Army Worm
+    <string name="name_faw">
+        Fall Armyworm
     </string>
     <string name="sci_name_aw">
         Spodoptera frugiperda
@@ -17,14 +17,14 @@
 
     </string>
     <string name="damage_aw">
-        Ang pinagkainan ng Armyworm ay nagdudulot ng punit-punit na dahon, na may  Defoliation na nagaganap mula sa gilid ng dahon mula sa gitnang bahagi nito.
+        Ang pinagkainan ng fall armyworm ay nagdudulot ng punit-punit na dahon, na may  Defoliation na nagaganap mula sa gilid ng dahon mula sa gitnang bahagi nito.
         Ang pinsala ay maaring maging malawak na karamihan sa mga pananim, maliban sa kalagitnaang parte at tangkay ay nakonsumo na.
 	    Ang mga may malalang pinsala ay maaring i-Recover, ngunit, maaari lamang itong maagapan kung ang Growing point ay hindi pa napinsala
 
     </string>
     <string name="mgmt_aw">
-        Kontorladong mga aksyon sa mais ay kinakailangan kung ang mga armyworms ay nasaa ½ at 1/3 na pulgada at tumatayang 35% ang napinsala o 50% ay nakitaan na ng sira sa mga pananim.
-        Mayroong Pheromone Traps upang makitaan ng aktibidad ng Adult Armyworm.
+        Kontorladong mga aksyon sa mais ay kinakailangan kung ang mga fall armyworm ay nasaa ½ at 1/3 na pulgada at tumatayang 35% ang napinsala o 50% ay nakitaan na ng sira sa mga pananim.
+        Mayroong Pheromone Traps upang makitaan ng aktibidad ng Adult fall armyworm.
     </string>
 
     <!--________________ Corn aphid _________________-->

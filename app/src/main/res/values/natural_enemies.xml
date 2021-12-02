@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
         <string name="natural_enemies_aw">
-            There are two known natural enemies that are effective in controlling army worms: parasitoid wasps and trichogramma wasps.
-            These wasps lay their eggs inside the eggs of moths such as the army worm. This prevents the eggs of army worms from
-            hatching into a caterpillar and it also breaks the lifecycle of the army worm, effectively preventing them
+            There are two known natural enemies that are effective in controlling fall armyworm: parasitoid wasps and trichogramma wasps.
+            These wasps lay their eggs inside the eggs of moths such as the fall armyworm. This prevents the eggs of army worms from
+            hatching into a caterpillar and it also breaks the lifecycle of the fall armyworm, effectively preventing them
             from reproducing.
     </string>
     <string name="natural_enemies_ca">

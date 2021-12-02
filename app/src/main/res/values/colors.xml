@@ -13,4 +13,8 @@
     <color name="light_gray">#BCDCDCDC</color>
     <color name="gray">#717171</color>
     <color name="transparent">#00FFFFFF</color>
+
+    <color name="green_700">#388E3C</color>
+    <color name="green_500">#4CAF50</color>
+
 </resources>

@@ -21,7 +21,7 @@
     </string>
 
     <string name="tips_obtain_image">
-        Payo sa pagkuha ng litrato
+        Tips sa pagkuha ng litrato
     </string>
 
     <string name="tips_too_far">
@@ -87,5 +87,13 @@
 
     <string name="concealed">
         Insekto\'y nakatago
+    </string>
+
+    <string name="more_info">
+        Karagdagang Impormasyon
+    </string>
+
+    <string name="view_part_corn">
+        Tingnan ang mga bahagi ng halamang mais
     </string>
 </resources>

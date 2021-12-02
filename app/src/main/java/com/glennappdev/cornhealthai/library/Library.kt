@@ -6,7 +6,7 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.glennappdev.cornhealthai.LocaleHelper
+import com.glennappdev.cornhealthai.settings.LocaleHelper
 import com.glennappdev.cornhealthai.R
 import com.glennappdev.cornhealthai.databinding.ActivityLibraryBinding
 
@@ -27,8 +27,8 @@ class Library : AppCompatActivity(), View.OnClickListener {
 
         binding.txtLeafDiseases.text = resources.getString(R.string.leaf_diseases)
         binding.txtInsects.text = resources.getString(R.string.insect_pests)
-
-
+        binding.txtMoreInfo.text = resources.getString(R.string.more_info)
+        binding.txtViewCornParts.text = resources.getString(R.string.view_part_corn)
         // set opacity of cardBar to 0
         val topBar = binding.cardBar
         val textBar = binding.txtBar
@@ -54,6 +54,7 @@ class Library : AppCompatActivity(), View.OnClickListener {
         binding.cardFb.setOnClickListener(this)
         binding.cardWg.setOnClickListener(this)
         binding.cardWw.setOnClickListener(this)
+        binding.cardViewPartsCorn.setOnClickListener(this)
 
         binding.txtBesideCornIcon.text = resources.getString(R.string.library_txt)
         binding.txtInfoFieldMonitoring.text = resources.getString(R.string.field_monitoring)
@@ -101,6 +102,8 @@ class Library : AppCompatActivity(), View.OnClickListener {
             R.id.card_ww ->
                 startActivity(Intent(this, LibraryPestDiseaseInfo::class.java)
                     .putExtra("card", "card_ww"))
+            R.id.cardViewPartsCorn ->
+                startActivity(Intent(this, ViewCornParts::class.java))
         }
     }
 }

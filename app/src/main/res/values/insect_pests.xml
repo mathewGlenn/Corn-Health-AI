@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--________________ Army worm _________________-->
+    <!--________________ Fall Army worm _________________-->
 
-    <string name="name_aw">
-        Army Worm
+    <string name="name_faw">
+        Fall Armyworm
     </string>
     <string name="sci_name_aw">
         Spodoptera frugiperda
@@ -16,14 +16,14 @@
         body when at rest. Outstretched, wings measure about 1 ½ inches from tip to tip. The hind wings are white.
     </string>
     <string name="damage_aw">
-        Armyworm feeding gives corn a ragged appearance, with defoliation occurring from the leaf edge toward 
+        fall armyworm feeding gives corn a ragged appearance, with defoliation occurring from the leaf edge toward
         the midrib. Damage may be so extensive that most of the plant, except leaf midribs and the stalk, is consumed. 
         Such a highly damaged plant may recover, however, if the growing point has not been destroyed.
     </string>
     <string name="mgmt_aw">
-        Control actions in corn are recommended when armyworms average between 1/2 and 3/4 inches and the entire
+        Control actions in corn are recommended when fall armyworm average between 1/2 and 3/4 inches and the entire
         field averages 35% infested plants or 50% or more defoliation is seen on damaged plants. Pheromone traps are
-        available to monitor adult armyworm activity.
+        available to monitor adult fall armyworm activity.
     </string>
 
     <!--________________ Corn aphid _________________-->

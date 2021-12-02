@@ -1,4 +1,4 @@
-package com.glennappdev.cornhealthai
+package com.glennappdev.cornhealthai.prediction
 
 import android.content.Context
 import android.content.Intent
@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.glennappdev.cornhealthai.settings.LocaleHelper
+import com.glennappdev.cornhealthai.R
 import com.glennappdev.cornhealthai.databinding.ActivityPredictionResultBinding
 
 class PredictionResult : AppCompatActivity() {
@@ -34,7 +36,7 @@ class PredictionResult : AppCompatActivity() {
         val class2 = intent.getStringExtra("class2Name").toString()
         val class2Prob = intent.getFloatExtra("class2Prob", 0f)
 
-        binding.img.setImageBitmap(Constants.Image)
+        binding.img.setImageBitmap(Image.Image)
 
         binding.txtClassName.text = class1
         binding.txtResult.text = resources.getString(R.string.result)
@@ -60,7 +62,7 @@ class PredictionResult : AppCompatActivity() {
             }
 
             // insect pests
-            "Army worm" -> {
+            "Fall armyworm" -> {
                 binding.imgSmall.setImageResource(R.drawable.aw1)
             }
             "Corn aphid" -> {
@@ -99,7 +101,7 @@ class PredictionResult : AppCompatActivity() {
             }
 
             // insect pests
-            "Army worm" -> {
+            "Fall armyworm" -> {
                 binding.imgSmall2.setImageResource(R.drawable.aw1)
             }
             "Corn aphid" -> {

@@ -1,5 +1,6 @@
-package com.glennappdev.cornhealthai
+package com.glennappdev.cornhealthai.settings
 
+import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
@@ -7,8 +8,13 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.glennappdev.cornhealthai.BuildConfig
 import com.glennappdev.cornhealthai.databinding.ActivitySettingsBinding
 import com.jakewharton.processphoenix.ProcessPhoenix
+import java.lang.Exception
+import android.widget.Toast
+import com.glennappdev.cornhealthai.databinding.ActivityHelpBinding
+
 
 class Settings : AppCompatActivity() {
 
@@ -20,7 +26,6 @@ class Settings : AppCompatActivity() {
 
         binding.cardLanguage.setOnClickListener {
             showAlertDialog()
-
         }
 
         binding.cardAboutUs.setOnClickListener {
@@ -30,6 +35,41 @@ class Settings : AppCompatActivity() {
         binding.btnBack.setOnClickListener{
             finish()
         }
+
+        binding.cardShareApp.setOnClickListener{
+            try {
+                val shareIntent = Intent(Intent.ACTION_SEND)
+                shareIntent.type = "text/plain"
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "My application name")
+                var shareMessage = "\nLet me recommend you this application\n\n"
+                shareMessage =
+                    """
+                    ${shareMessage}https://play.google.com/store/apps/details?id=${BuildConfig.APPLICATION_ID}
+                    """.trimIndent()
+                shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage)
+                startActivity(Intent.createChooser(shareIntent, "choose one"))
+            } catch (e: Exception) {
+                //e.toString();
+            }
+        }
+
+        binding.cardContactUs.setOnClickListener{
+            val i = Intent(Intent.ACTION_SEND)
+            i.type = "message/rfc822"
+            i.putExtra(Intent.EXTRA_EMAIL, arrayOf("glenngarmaappdev@gmail.com"))
+            try {
+                startActivity(Intent.createChooser(i, "Send mail..."))
+            } catch (ex: ActivityNotFoundException) {
+                Toast.makeText(this,
+                    "There are no email clients installed.",
+                    Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        binding.cardHelp.setOnClickListener{
+            startActivity(Intent(this, Help::class.java))
+        }
+
     }
 
     private fun showAlertDialog() {

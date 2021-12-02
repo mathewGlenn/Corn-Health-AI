@@ -1,4 +1,4 @@
-package com.glennappdev.cornhealthai
+package com.glennappdev.cornhealthai.settings
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -8,16 +8,17 @@ import java.util.*
 
 class LocaleHelper {
 
-
     //method to set the language at runtime
     fun setLocale(context: Context, language: String): Context {
         return updateResources(context, language)
     }
 
+    // method to change languae in settings
     fun changeLocale(context: Context, language: String){
         persist(context, language)
     }
 
+    // persist the change language in SharedPref
     private fun persist(context: Context, language: String) {
         val preferences: SharedPreferences = context.getSharedPreferences("LANGUAGE", Context.MODE_PRIVATE)
         val editor: SharedPreferences.Editor = preferences.edit()

@@ -23,8 +23,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".library.FieldMonitoring"
+            android:exported="false" />
+        <activity
+            android:name=".settings.Help"
+            android:exported="false" />
+        <activity
+            android:name=".onboarding.OnBoarding"
+            android:exported="false" />
+        <activity
+            android:name=".library.ViewCornParts"
+            android:exported="false" />
+        <activity
             android:name=".Splash"
-
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,38 +44,35 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AboutUs"
+            android:name=".settings.AboutUs"
             android:exported="false" />
         <activity
             android:name=".library.LibraryPestDiseaseInfo"
             android:exported="false" />
-        <activity android:name=".TestUI" />
         <activity
             android:name=".library.Library"
             android:exported="false" />
         <activity
-            android:name=".Settings"
+            android:name=".settings.Settings"
             android:exported="false" />
         <activity
-            android:name=".ViewImagesFull"
+            android:name=".prediction.ViewImagesFull"
             android:exported="false" />
         <activity
-            android:name=".ObtainImage"
+            android:name=".prediction.ObtainImage"
             android:exported="true" />
         <activity
-            android:name=".LeafDiseaseInfo"
+            android:name=".prediction.LeafDiseaseInfo"
             android:exported="false" />
         <activity
-            android:name=".InsectPestInfo"
+            android:name=".prediction.InsectPestInfo"
             android:exported="true" />
         <activity
-            android:name=".PredictionResult"
+            android:name=".prediction.PredictionResult"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

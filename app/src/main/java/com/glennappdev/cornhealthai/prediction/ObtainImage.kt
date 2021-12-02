@@ -1,4 +1,4 @@
-package com.glennappdev.cornhealthai
+package com.glennappdev.cornhealthai.prediction
 
 import android.content.ComponentName
 import android.content.Context
@@ -8,18 +8,19 @@ import android.graphics.Bitmap
 import android.graphics.ImageDecoder
 import android.net.Uri
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.view.View
-import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
+import com.glennappdev.cornhealthai.*
 import com.glennappdev.cornhealthai.databinding.ActivityObtainImageBinding
+import com.glennappdev.cornhealthai.settings.LocaleHelper
 import com.jaeger.library.StatusBarUtil
 import java.io.File
 import java.io.FileOutputStream
@@ -115,7 +116,7 @@ class ObtainImage : AppCompatActivity() {
                 //imgBitmap is immutable so I copy it to a mutable
                 //bitmap so we can use the bitmap for image processing
                 mutableBitmap = imgBitmap.copy(Bitmap.Config.ARGB_8888, true)
-                Constants.Image = mutableBitmap
+                Image.Image = mutableBitmap
 
                 val (class1, class1Prob, class2, class2Prob) = classifier.predict(mutableBitmap,
                     model)

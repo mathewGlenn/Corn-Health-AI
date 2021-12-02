@@ -1,4 +1,4 @@
-package com.glennappdev.cornhealthai
+package com.glennappdev.cornhealthai.prediction
 
 import android.content.Context
 import android.content.Intent
@@ -9,6 +9,8 @@ import android.text.util.Linkify
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.glennappdev.cornhealthai.settings.LocaleHelper
+import com.glennappdev.cornhealthai.R
 import com.glennappdev.cornhealthai.databinding.ActivityInsectPestInfoBinding
 import com.synnapps.carouselview.ImageListener
 
@@ -61,8 +63,8 @@ class InsectPestInfo : AppCompatActivity() {
         val chem_control: String
 
         when (prediction) {
-            "Army worm" -> {
-                binding.label.text = resources.getString(R.string.name_aw)
+            "Fall armyworm" -> {
+                binding.label.text = resources.getString(R.string.name_faw)
                 binding.sciName.text = resources.getString(R.string.sci_name_aw)
                 binding.desc.text = resources.getString(R.string.desc_aw)
                 binding.damage.text = resources.getString(R.string.damage_aw)

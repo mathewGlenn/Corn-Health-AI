@@ -6,9 +6,9 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.glennappdev.cornhealthai.LocaleHelper
+import com.glennappdev.cornhealthai.settings.LocaleHelper
 import com.glennappdev.cornhealthai.R
-import com.glennappdev.cornhealthai.ViewImagesFull
+import com.glennappdev.cornhealthai.prediction.ViewImagesFull
 import com.glennappdev.cornhealthai.databinding.ActivityLibPestDiseaseInfoBinding
 import com.synnapps.carouselview.ImageListener
 
@@ -53,6 +53,9 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
 
         when (intent.getStringExtra("card")) {
             "card_cr" -> {
+                binding.biologicalOrganicControl.visibility = View.GONE
+                binding.contentBiologicalOrganicControl.visibility = View.GONE
+
                 binding.topBarText.text = "Common Rust"
                 binding.label.text = binding.topBarText.text
                 binding.sciCause.text = resources.getString(R.string.cause_cr)
@@ -60,7 +63,7 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
                 binding.desc.text = resources.getString(R.string.desc_cr)
                 binding.damageSymptoms.text = resources.getString(R.string.symptoms_cr)
                 binding.chemicalControl.text = resources.getString(R.string.chem_control_cr)
-
+                binding.preventiveMeasures.text = resources.getString(R.string.prevent_cr)
                 binding.tDamageSymptom.text = resources.getString(R.string.symptoms)
                 binding.biologicalOrganicControl.text = "Organic control"
                 // binding.biologicalOrganicControl.text =
@@ -73,6 +76,9 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
             }
 
             "card_gls" -> {
+                binding.biologicalOrganicControl.visibility = View.GONE
+                binding.contentBiologicalOrganicControl.visibility = View.GONE
+
                 binding.topBarText.text = "Gray Leaf Spot"
                 binding.label.text = binding.topBarText.text
                 binding.sciCause.text = resources.getString(R.string.cause_gls)
@@ -80,7 +86,7 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
                 binding.desc.text = resources.getString(R.string.desc_gls)
                 binding.damageSymptoms.text = resources.getString(R.string.symptoms_gls)
                 binding.chemicalControl.text = resources.getString(R.string.chem_control_gls)
-
+                binding.preventiveMeasures.text = resources.getString(R.string.prevent_gls)
                 binding.tDamageSymptom.text = resources.getString(R.string.symptoms)
                 binding.biologicalOrganicControl.text = "Organic control"
                 // binding.biologicalOrganicControl.text =
@@ -94,6 +100,9 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
             }
 
             "card_nlb" -> {
+                binding.biologicalOrganicControl.visibility = View.GONE
+                binding.contentBiologicalOrganicControl.visibility = View.GONE
+
                 binding.topBarText.text = "Northern Leaf Blight"
                 binding.label.text = binding.topBarText.text
                 binding.sciCause.text = resources.getString(R.string.cause_nlb)
@@ -101,7 +110,7 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
                 binding.desc.text = resources.getString(R.string.desc_nlb)
                 binding.damageSymptoms.text = resources.getString(R.string.symptoms_nlb)
                 binding.chemicalControl.text = resources.getString(R.string.chem_control_nlb)
-
+                binding.preventiveMeasures.text = resources.getString(R.string.prevent_nlb)
                 binding.tDamageSymptom.text = resources.getString(R.string.symptoms)
                 binding.biologicalOrganicControl.text = "Organic control"
                 // binding.biologicalOrganicControl.text =
@@ -124,6 +133,7 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
                     resources.getString(R.string.natural_enemies_aw)
                 binding.chemicalControl.text = resources.getString(R.string.chem_control_aw)
                 binding.tDamageSymptom.text = resources.getString(R.string.damage)
+                binding.preventiveMeasures.text = resources.getString(R.string.prevent_faw)
                 images = arrayListOf(
                     R.drawable.aw1,
                     R.drawable.aw2,
@@ -146,6 +156,7 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
                     resources.getString(R.string.natural_enemies_ca)
                 binding.chemicalControl.text = resources.getString(R.string.chem_control_ca)
                 binding.tDamageSymptom.text = resources.getString(R.string.damage)
+                binding.preventiveMeasures.text = resources.getString(R.string.prevent_ca)
                 images = arrayListOf(
                     R.drawable.ca1,
                     R.drawable.ca2,
@@ -165,6 +176,7 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
                     resources.getString(R.string.natural_enemies_cb)
                 binding.chemicalControl.text = resources.getString(R.string.chem_control_cb)
                 binding.tDamageSymptom.text = resources.getString(R.string.damage)
+                binding.preventiveMeasures.text = resources.getString(R.string.prevent_cb)
                 images = arrayListOf(
                     R.drawable.cb1,
                     R.drawable.cb2,
@@ -183,6 +195,7 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
                     resources.getString(R.string.natural_enemies_fb)
                 binding.chemicalControl.text = resources.getString(R.string.chem_control_fb)
                 binding.tDamageSymptom.text = resources.getString(R.string.damage)
+                binding.preventiveMeasures.text = resources.getString(R.string.prevent_fb)
                 images = arrayListOf(
                     R.drawable.fb1,
                     R.drawable.fb2,
@@ -201,6 +214,7 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
                     resources.getString(R.string.natural_enemies_wg)
                 binding.chemicalControl.text = resources.getString(R.string.chem_control_wg)
                 binding.tDamageSymptom.text = resources.getString(R.string.damage)
+                binding.preventiveMeasures.text = resources.getString(R.string.prevent_wg)
                 images = arrayListOf(
                     R.drawable.wg1,
                     R.drawable.wg2,
@@ -218,6 +232,7 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
                     resources.getString(R.string.natural_enemies_ww)
                 binding.chemicalControl.text = resources.getString(R.string.chem_control_ww)
                 binding.tDamageSymptom.text = resources.getString(R.string.damage)
+                binding.preventiveMeasures.text = resources.getString(R.string.prevent_ww)
                 images = arrayListOf(
                     R.drawable.ww1,
                     R.drawable.ww2,

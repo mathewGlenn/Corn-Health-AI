@@ -86,4 +86,13 @@
         Concealed insect
     </string>
 
+    <string name="more_info">
+        More Information
+    </string>
+
+
+    <string name="view_part_corn">
+        View parts of corn plant
+    </string>
+
 </resources>
