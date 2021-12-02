@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="step1">
+            Pindutin ang unang button kung gustong kilalanin ang sakit sa dahon. Pindutin naman ang pangalawang
+            button kung gustong kilalanin ang pesteng insekto.
+    </string>
+
+    <string name="step2">
+        Buksan ang camera upang makunan ng litrato ang sakit sa dahon o pesteng insekto. Maaari mo ring buksan
+        ang gallery upang mamili ng litrato. Siguraduhing ang litrato ay malinaw.
+    </string>
+
+    <string name="step3">
+        Pagkatapos makuha ang litrato, i-crop ang lugar sa litrato kung saan naroroon ang sakit sa dahon o
+        pesteng insekto.
+    </string>
+
+    <string name="step4">
+        Suriin kung ang mga katangian ng nahulaang insekto o sakit sa dahon ay tumutugma sa insekto o sakit sa dahon
+        na iyong kinunan. Pindutin ang resulta upang makita ang impormasyon tungkol sa sakit sa dahon o pesteng
+         insekto.
+    </string>
+</resources>

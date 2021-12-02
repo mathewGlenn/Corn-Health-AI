@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="step1">
+        If you want to identify leaf diseases, click the first button. If you want to identify insect pest click
+        the second button.
+    </string>
+
+    <string name="step2">
+        Open the camera and capture the leaf disease or insect pest. You can also open the gallery to
+        select image. Make sure the image is clear.
+    </string>
+
+    <string name="step3">
+        After obtaining the image, crop the area of the image where the insect pest or leaf disease is located.
+    </string>
+
+    <string name="step4">
+        Check if the characteristics of the predicted insect or leaf disease match the disease or insect you captured.
+        Click the prediction result to view information about the insect pest or leaf disease.
+    </string>
+</resources>
