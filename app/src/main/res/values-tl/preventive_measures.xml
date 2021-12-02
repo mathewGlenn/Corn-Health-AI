@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="prevent_cr">
+        Ang pangunahing stratehiya upang maiwasan ang common rust ay ang pagtatanim ng mga disease-resistant na mais. Ang napapanahong
+        pagtatanim ng mais nang maaga sa panahon ng pagtatanim ay maaaring makatulong upang maiwasan ang mataas na antas ng inoculum o mga
+        kondisyon sa kapaligiran na magsusulong ng pag-develop ng sakit.
+    </string>
+
+    <string name="prevent_gls">
+        Maaaring maiwasan ang gray leaf spot sa pamamagitan ng paggamit ng mga disease-resistant na corn hybrids, naaangkop na soil tillage,
+        at crop rotation. Ang crop rotation o pagsasalit-salit ng mga pananim ayon sa kalagayan ng panahon ay makatutulong na maiwasan o mabawasan
+        ang banta ng gray leaf spot.
+    </string>
+
+    <string name="prevent_nlb">
+        Ang pinka-ekonomiko at epektibong paraan upang maiwasan ang northern corn leaf blight ay sa pamamagitan ng pagtatanim ng mga disease-resistant
+        na corn hybrids. Ang pag-scout o pagsubaybay sa taniman bago ang pollination ay maaari ding makatulong upang maiwasan ang pinsala ng NLB sa
+        pamamagitan ng pagkontrol dito bago pa ito mag-develop. Ang crop rotation ay makatutulong din upang mabawasan ang mga environmental condition
+        na kanais-nais para sa sakit na NLB.
+    </string>
+
+    <string name="prevent_faw">
+        Ang pagsasalit-salit sa pagtatanim ng ibang pananim na maliban sa mais kagaya ng beans at sunflower ay makatutulong sa pagbawas ng pagsalakay ng
+        fall armyworms. Ang regular na field monitoring ay epektibo rin sa pagtukoy ng presensya ng mga peste sa taniman bago pa man lumaki ang epekto ng
+        mga ito sa pananim.
+    </string>
+
+    <string name="prevent_ca">
+        Upang maiwasan o mabawasan ang mga epekto ng aphid sa taniman ng mais, sa panahon ng paglaki ng pananim, alisin ang mga damo sa loob at labas ng pananim.
+        Regular na siyasatin ang mga pananim upang ma-monitor ang presensya ng aphids. Kung naroroon ang mga aphids, sirain ang mga dahon na labis na napeste.
+        Pagkatapos anihin, kolektahin at sunugin ang mga labi ng mga mais. Gayunpaman, may mga corn varities na resistant sa aphids.
+    </string>
+
+    <string name="prevent_cb">
+        Anumang paraan ng pagkontrol ng mga damo ay makatutulong na mabawasan ang bilang ng mga potensyal na lugar na maaaring pangitlugan ng mga corn borer.
+        Ang pag-kontrol sa mga damuhan na malapit sa pananim ay makatutulong upang mabawasan ang banta ng corn borer.
+    </string>
+
+    <string name="prevent_fb">
+        Ang pinaka-epektibong paraan upang maiwasan ang mga corn flea beetle ay ang pagbili ng mga corn seeds na mayroong systemic insecticides.
+    </string>
+
+    <string name="prevent_wg">
+        Bago magtanim, mabutihing siyasatin muna ang lupang pagtataniman kung mayroon bang white grubs. Para malaman, bungkalin ang lupa bago taniman at tingnan
+        ang mga bahagi ng lupa na malapit sa mga damo sa paligid ng taniman kung mayroong white grubs.
+    </string>
+
+    <string name="prevent_ww">
+        Ang pagsiyasat sa lupang tataniman bago ang pagtatanim ay mahusay na hakbang upang maiwasan ang pinsala ng wireworm. Isang paraan upang malaman ang presensya
+        ng wireworms ay ang paggamit ng mga bait trap isang linggo o higit pa bago ang pagtatanim. Gayunpaman, ilan sa mga bait traps ay hindi made-detect ang wireworms
+        kung kaunti lamang ang kanilang populasyon kaya naman mabutihing siyasatin parin ang taniman pagkatapos tumubo ang mga mais.
+    </string>
+</resources>

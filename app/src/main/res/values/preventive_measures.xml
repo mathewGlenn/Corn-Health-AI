@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prevent_cr">
+        Planting disease-resistant hybrid corn is the primary strategy to avoid common rust. Timely planting of corn early during the growing season
+        may help to avoid high inoculum levels or environmental conditions that would promote disease development.
+    </string>
+
+    <string name="prevent_gls">
+        Gray leaf spot can be prevented by using resistant corn hybrids, convetional tillage where appropriate, and crop rotation. Rotation to crops
+        other than corn for at least one year in low risk fields may minimize the severity of GLS.
+    </string>
+
+    <string name="prevent_nlb">
+        The most economical and effective way to avoid Northern Corn Leaf Blight is by planting disease-resistant corn hybrids. Scouting the field during
+        or before pollination can also avoid damage of NLB by controlling the disease before it develops. Crop rotation also helps reduce the favorable environmental conditions for NLB.
+    </string>
+
+    <string name="prevent_faw">
+        Rotating corn with other non-host crops such as sunflower and beans may be useful to minimize the invasion of fall armyworms. Regular field monitoring also proves effective by identifying
+        the presence of the pest early before the impact on corn field increases.
+    </string>
+
+    <string name="prevent_ca">
+        To prevent or minimize impacts of aphid in corn field, during the growth of the crop, remove weeds from within and outside the crop. Inspect crops
+        regularly to monitor the presence of aphids. If aphids are present, destroy leaves that are heavily infested. After harvest, collect and burn the
+        remains of crops. There are varieties of corn that are resistant to aphids; these have leaf compounds which have a defensive role against the aphid.
+    </string>
+
+    <string name="prevent_cb">
+        Any weed control method that helps eliminate grasses will reduce the number of potential stalk borer egg-laying sites, reducing the probability of stalk
+        borer damage the next year. Control of grassy weeds is important to keep stalk borer problems from increasing year to year.
+    </string>
+
+    <string name="prevent_fb">
+        The most effective way to prevent corn flea beetles is to purchase seeds that has been treated with systemic insecticides.
+    </string>
+
+    <string name="prevent_wg">
+        Preventative measures should be taken before planting if scouting reveals a presence of white grubs in a field. To scout for grubs, dig and break up soil before planting.
+        Sampling efforts should target grassy areas within and around fields.
+    </string>
+
+    <string name="prevent_ww">
+        Scouting before planting is a good preventive measure against wireworm. One method to easily identify the presence of wireworms is by using a bait trap one week or earlier prior to planting.
+        Some traps may not detect wireworms if their population is low so it is still important to scout after the corn plants emerges.
+    </string>
+</resources>

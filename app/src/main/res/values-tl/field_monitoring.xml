@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="visit_field">
+        Pag tumubo na ang pananim, subukang bisitahin ang taniman 1-2 beses kada isang linggo.
+
+    </string>
+
+    <string name="check_spots">
+
+        Suriin ang ibat-ibang parte ng taniman. Tuwing bibisita, sundin ang ibat ibang scouting patterns kagaya ng sa paglalarawan
+         sa ibaba. Maglakad sa taniman gamit ang scouting patterns na mga ito.
+    </string>
+
+    <string name="look_signs">
+        Suriin ang mga dahon, tangkay, bunga, at ibang parte ng pananim. Tingnan kung may mga pagkawala ng kulay, deformation kagaya ng pamamalukto ng mga dahon, at
+        mga pinsala dahil sa pagkain ng mga insekto.
+
+    </string>
+
+    <string name="use_app_feature">
+
+        Kung makakita ka ng senyales ng peste, gamitin ang app upang kilalanin ang peste at basahin ang impormasyon
+        upang makapagdesisyon kung paano kokontrolin ito.
+    </string>
+
+    <string name="fm_title1">
+        1. Bisitahin ang iyong taniman
+    </string>
+
+    <string name="fm_title2">
+        2. Suriin ang ilang mga lugar
+    </string>
+
+    <string name="fm_title3">
+        3. Maghanap ng mga palatandaan ng peste
+    </string>
+
+    <string name="how_to_monitor">
+        Paano subaybayan ang iyong taniman:
+    </string>
+</resources>

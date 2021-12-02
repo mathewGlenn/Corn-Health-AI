@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="visit_field">
+        After the plants emerged, try to visit your field 1-2 times per week.
+
+    </string>
+
+    <string name="check_spots">
+        Check different parts of the field. Each visit, follow different scouting patterns such as the
+        illustration below. Walk a path in the field with these scouting patterns.
+    </string>
+
+    <string name="look_signs">
+        Examine the crop by checking on the leaves, stems, buds, and fruits. Check the plants for discoloration,
+        deformation, and feeding damages which indicate pest activities.
+    </string>
+
+    <string name="use_app_feature">
+        When you find a sign of infestation, use the identification feature of this app to identify the pest and
+        use the provided information to make control decisions.
+    </string>
+
+    <string name="fm_title1">
+        1. Visit your field
+    </string>
+
+    <string name="fm_title2">
+        2. Check several spots
+    </string>
+
+    <string name="fm_title3">
+        3. Look for sign of pest
+    </string>
+
+    <string name="how_to_monitor">
+        How to monitor your field:
+    </string>
+
+
+</resources>

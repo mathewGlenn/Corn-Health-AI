@@ -11,11 +11,16 @@
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/gradient_main.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/gradient_obtain_image.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/gradient_obtain_image_yellow.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_baseline_double_arrow_24.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_baseline_fullscreen_24.xml" value="0.2890625" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_baseline_help_24.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.2890625" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_baseline_open_in_full_24.xml" value="0.2890625" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_baseline_skip_next_24.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_book.xml" value="0.2890625" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_capture_pest.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/ic_capture_result.xml" value="0.2490740740740741" />
@@ -37,10 +42,10 @@
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/tab_selector.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/drawable/tabs_selector.xml" value="0.2703125" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_about_us.xml" value="0.264" />
-        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_field_monitoring.xml" value="0.25" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_field_monitoring.xml" value="0.264" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_help.xml" value="0.19933554817275748" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_insect_pest_info.xml" value="0.264" />
-        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_leaf_disease_info.xml" value="0.536" />
+        <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_leaf_disease_info.xml" value="0.2" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_lib_insect_pest.xml" value="0.264" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_lib_pest_disease_info.xml" value="0.264" />
         <entry key="..\:/Users/Glenn Mathew Garma/Machine Learning/Thesis/Android Studio/CornHealthAI/app/src/main/res/layout/activity_library.xml" value="0.24266936299292213" />
