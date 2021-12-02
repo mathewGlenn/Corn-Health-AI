@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_welcome" translatable="false">
+        Welcome to Corn Health AI
+    </string>
+
+    <string name="cont_welcome" translatable="false">
+        Identify leaf diseases and insect pests in your corn plant.
+    </string>
+
+    <string name="title_take_photo" translatable="false">
+        Take a photo of the pest…
+    </string>
+
+    <string name="cont_take_photo" translatable="false">
+        Just take a photo of the leaf disease or insect pest you want to ID. Make sure the photo is clear.
+    </string>
+
+    <string name="title_instant_result" translatable="false">
+        … and get instant result.
+    </string>
+
+    <string name="cont_instant_result" translatable="false">
+       The insect or leaf disease will be instantly recognized with suggestions on how to manage them.
+    </string>
+</resources>
