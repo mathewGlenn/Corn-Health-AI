@@ -33,7 +33,8 @@
             app:cardElevation="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -146,6 +147,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/roboto_medium"
+                    android:paddingEnd="5dp"
                     android:text="cause"
                     android:textColor="@color/text_black"
                     android:textSize="17sp"

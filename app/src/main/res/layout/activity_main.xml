@@ -34,14 +34,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:clickable="true"
-                android:id="@+id/mre"
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonHelp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/ic_baseline_more_vert_24"
+                android:drawableEnd="@drawable/ic_baseline_help_24"
+                android:drawableTint="@color/gray"
+                android:text="help"
+                android:textAllCaps="false"
+                android:textColor="@color/gray"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -82,13 +84,13 @@
                     android:src="@drawable/ic_leaf" />
 
                 <TextView
+                    android:id="@+id/txtLeafDisease"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:id="@+id/txtLeafDisease"
-                    android:text="@string/detect_disease"
                     android:layout_marginHorizontal="30dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/detect_disease"
                     android:textColor="#ffffff"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -121,10 +123,10 @@
                     android:src="@drawable/ic_insect" />
 
                 <TextView
+                    android:id="@+id/txtInsectPest"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:id="@+id/txtInsectPest"
                     android:layout_marginHorizontal="30dp"
                     android:fontFamily="@font/montserrat_medium"
                     android:text="@string/detect_insect"
@@ -163,9 +165,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginHorizontal="30dp"
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Library"
-                    android:layout_marginHorizontal="30dp"
                     android:textColor="#ffffff"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -201,9 +203,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
 
+                    android:layout_marginHorizontal="30dp"
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Settings"
-                    android:layout_marginHorizontal="30dp"
                     android:textColor="#ffffff"
                     android:textSize="20sp" />
             </LinearLayout>

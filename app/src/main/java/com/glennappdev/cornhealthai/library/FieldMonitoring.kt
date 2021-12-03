@@ -52,5 +52,9 @@ class FieldMonitoring : AppCompatActivity() {
 
         binding.useAppFeature.text = resources.getString(R.string.use_app_feature)
 
+        binding.btnBack.setOnClickListener{
+            finish()
+        }
+
     }
 }

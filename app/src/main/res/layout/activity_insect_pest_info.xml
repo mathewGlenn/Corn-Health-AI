@@ -148,6 +148,7 @@
                     android:fontFamily="@font/roboto_medium"
                     android:paddingHorizontal="20dp"
                     android:text="science"
+                    android:paddingEnd="5dp"
                     android:textColor="@color/text_black"
                     android:textSize="17sp"
                     android:textStyle="italic"

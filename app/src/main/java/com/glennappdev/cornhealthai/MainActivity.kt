@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.glennappdev.cornhealthai.databinding.ActivityMainBinding
 import com.glennappdev.cornhealthai.library.Library
 import com.glennappdev.cornhealthai.prediction.ObtainImage
+import com.glennappdev.cornhealthai.settings.Help
 import com.glennappdev.cornhealthai.settings.LocaleHelper
 import com.glennappdev.cornhealthai.settings.Settings
 
@@ -53,6 +54,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.cardLibrary.setOnClickListener {
             startActivity(Intent(this, Library::class.java))
+        }
+
+        binding.buttonHelp.setOnClickListener{
+            startActivity(Intent(this, Help::class.java))
         }
 
 
