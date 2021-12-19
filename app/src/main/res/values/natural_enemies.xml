@@ -28,4 +28,83 @@
         Wireworms have few natural enemies. Some ground beetles and rove beetles will feed on wireworms. The larvae
         of stilleto flies are also known as predators of wireworms.
     </string>
+
+    <string name="desc_bw">
+        Small wasps with narrow waists, long antennae, and ant-like heads, usually less than ½ inch (1.2cm) long, with a long
+        black ovipositor extending from their rear ends. Black is the apparent color at first glance, but many species have orange or reddish abdomens. Braconid wasps do not sting.
+    </string>
+    <string name="benefit_bw">
+        Adults lay eggs on or in soft-bodied caterpillars including cabbage worms, tomato hornworms, and other garden pests. They are attracted by the smell of caterpillars
+        munching on plant leaves. The braconid larvae feed inside their living hosts, weakening or killing them. A female braconid wasp can lay up to 200 eggs a day in warm summer weather.
+    </string>
+
+    <string name="desc_tf">
+        A tachinid fly is a small flying insect that resembles a house fly. Most kinds are less than ½ inch (1 cm.) in length.
+        They usually have a few hairs sticking up and pointing backward and are gray or black in color.
+    </string>
+
+    <string name="benefit_tf">
+
+        Tachinid flies are beneficial because they kill pests.
+        Tachinidae can either lay eggs that a host will consume and later die, or adult flies will insert eggs directly into the host bodies.
+        As the larva develops inside the host, it eventually kills the insect it is living inside. Each species has their own preferred method,
+        but most choose caterpillars or beetles as hosts.
+
+    </string>
+
+    <string name="desc_lbb">
+       Adult lady beetles are small, round to oval, and dome-shaped. The most well known have black markings on red, orange, or yellow forewings,
+        but some are black. The area immediately behind the head, the pronotum, may also have a distinctive pattern. The color and pattern of markings
+        for each species may vary, but can aid identification.
+    </string>
+
+    <string name="benefit_lbb">
+Most lady beetles found on crops and in gardens are aphid predators. Some species prefer only certain aphid species while others will attack many
+        aphid species on a variety of crops. Some prefer mite or scale species. If aphids are scarce, lady beetle adults and larvae may feed on the eggs of moths and beetles,
+        and mites, thrips, and other small insects, as well as pollen and nectar. They may also be cannibalistic. Because of their ability to survive on other prey when aphids are
+        in short supply, lady beetles are particularly valuable natural enemies.
+    </string>
+
+    <string name="desc_pw">
+        Parasitic wasps are tiny wasps that are very beneficial to gardeners and farmers. They attack, paralyze and kill many kinds of insect pests. Adults are varied in their coloring, but larvae are usually cream colored.
+        Parasitic wasps are very prolific and can reproduce quickly, allowing for large populations which are very helpful in controlling insect pest infestations.
+
+    </string>
+
+    <string name="benefit_pw">
+        These tiny, delicate insects feast on aphids, caterpillars, beetles, scale, and flies.
+        Parasitic wasps deposit their eggs inside an adult or larval insect and when the eggs hatch,
+        the offspring will feed on the paralyzed host insect resulting in the host\'s death (if it did not die when it was paralyzed by the wasp).
+    </string>
+
+    <string name="desc_tw">
+        Trichogramma wasps are tiny parasites that attack the eggs of over 200 species of moths and caterpillars. They are extremely small - 4 or 5 will fit on the head of a pin.
+    </string>
+
+    <string name="benefit_tw">
+        Trichogramma lays its eggs inside the eggs of moths preventing the moth egg from hatching into a caterpillar. This prevents the damage caused by the feeding caterpillars,
+        and also breaks the life cycle of the pest, effectively preventing the pest from reproducing. In some species of moth up to 5 parasite eggs may be laid in each moth egg.
+        As the parasite develops within the egg, it turns black, and after about 10 days, an adult Trichogramma emerges. Adult Trichogramma can live up to 14 days after emergence.
+    </string>
+
+    <string name="desc_rb">
+        Rove beetles are members of the Staphylinidae family, which contains thousands of North American species. They range in length, though are typically about an inch (2.5 cm.) long.
+        Rove beetles have the interesting habit of raising up the end of their bodies like a scorpion when disturbed or frightened, but they can’t sting or bite (they do, however, produce pederin,
+        a toxin which can cause contact dermatitis if handled). Although they have wings and can fly, they usually prefer to run along the ground.
+    </string>
+
+    <string name="benefit_rb">
+        Rove beetles feed on other insects and sometimes on rotting vegetation. Rove beetles in gardens feed on small insects and mites that infest plants, as well insects in the soil and on plant roots.
+        Both the immature larvae and the adult beetles prey on other insects.
+    </string>
+
+    <string name="desc_gb">
+        The ground beetle is a shiny hard-shelled insect about ⅛ to 1½ inches long. Most ground beetles are dark colored, black or bronze, but some are metallic green, blue, gold, or red.
+        They have a narrow head with threadlike antennae and sometimes can be mistake for cockroaches. Larvae are dark brown or black grubs with 10 segments tapering toward the rear.
+    </string>
+
+    <string name="benefit_gb">
+        The nocturnal ground beetle is a voracious predator of slugs, snails, wireworms, cutworms, cabbage maggots, and other pests that live in the soil.
+        One beetle larva alone can eat more than 50 caterpillars.
+    </string>
 </resources>

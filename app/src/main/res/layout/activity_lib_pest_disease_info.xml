@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".library.LibraryPestDiseaseInfo">
 
     <View
@@ -295,10 +294,21 @@
                         android:justificationMode="inter_word"
                         android:paddingHorizontal="20dp"
                         android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
+
                         android:text="@string/lorem_short"
                         android:textColor="@color/text_black" />
 
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/showNaturalEnemyImgs"
+                        android:text="More info"
+                        android:layout_gravity="end"
+                        android:textColor="@color/text_black"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_marginEnd="10dp"
+                        android:paddingBottom="10dp"
+                        android:textAllCaps="false"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

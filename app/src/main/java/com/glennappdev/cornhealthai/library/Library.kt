@@ -85,7 +85,7 @@ class Library : AppCompatActivity(), View.OnClickListener {
 
             R.id.card_aw ->
                 startActivity(Intent(this, LibraryPestDiseaseInfo::class.java)
-                    .putExtra("card", "card_aw"))
+                    .putExtra("card", "card_faw"))
 
             R.id.card_ca ->
                 startActivity(Intent(this, LibraryPestDiseaseInfo::class.java)

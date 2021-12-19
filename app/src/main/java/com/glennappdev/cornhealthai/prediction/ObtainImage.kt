@@ -118,14 +118,19 @@ class ObtainImage : AppCompatActivity() {
                 mutableBitmap = imgBitmap.copy(Bitmap.Config.ARGB_8888, true)
                 Image.Image = mutableBitmap
 
-                val (class1, class1Prob, class2, class2Prob) = classifier.predict(mutableBitmap,
-                    model)
+                //compute the inference time
+                //val taskStartTime = System.currentTimeMillis()
+                val (class1, class1Prob, class2, class2Prob) = classifier.predict(mutableBitmap, model)
+                //val inferenceTime = System.currentTimeMillis() - taskStartTime
+
                 val i = Intent(this, PredictionResult::class.java)
                 i.putExtra("class1Name", class1)
                 i.putExtra("class1Prob", class1Prob)
                 i.putExtra("class2Name", class2)
                 i.putExtra("class2Prob", class2Prob)
                 i.putExtra("model", model)
+                //for measuring the inference time
+                //Toast.makeText(this, "Inference time: $inferenceTime", Toast.LENGTH_LONG).show()
                 startActivity(i)
                 finish()
             }

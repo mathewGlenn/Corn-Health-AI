@@ -6,10 +6,14 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.glennappdev.cornhealthai.settings.LocaleHelper
 import com.glennappdev.cornhealthai.R
-import com.glennappdev.cornhealthai.prediction.ViewImagesFull
 import com.glennappdev.cornhealthai.databinding.ActivityLibPestDiseaseInfoBinding
+import com.glennappdev.cornhealthai.naturalenemies.EnemiesOfCa
+import com.glennappdev.cornhealthai.naturalenemies.EnemiesOfCfb
+import com.glennappdev.cornhealthai.naturalenemies.EnemiesOfFaw
+import com.glennappdev.cornhealthai.naturalenemies.EnemiesOfWw
+import com.glennappdev.cornhealthai.prediction.ViewImagesFull
+import com.glennappdev.cornhealthai.settings.LocaleHelper
 import com.synnapps.carouselview.ImageListener
 
 class LibraryPestDiseaseInfo : AppCompatActivity() {
@@ -37,7 +41,8 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
             }
         }
 
-
+        //get intent
+        val card = intent.getStringExtra("card")
 
         // checked saved locale
         val preferences: SharedPreferences =
@@ -51,11 +56,34 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
         binding.tPrevMeasures.text = resources.getString(R.string.preventive_measures)
         binding.tTreatment.text = resources.getString(R.string.treatment)
 
-        when (intent.getStringExtra("card")) {
+        binding.showNaturalEnemyImgs.setOnClickListener {
+           when(card){
+               "card_faw" ->{
+                   startActivity(Intent(this, EnemiesOfFaw::class.java))
+               }
+
+               "card_ca" ->{
+                   startActivity(Intent(this, EnemiesOfCa::class.java))
+               }
+
+               "card_cb" ->{
+                   startActivity(Intent(this, EnemiesOfFaw::class.java))
+               }
+
+               "card_fb" ->{
+                   startActivity(Intent(this, EnemiesOfCfb::class.java))
+               }
+
+               "card_ww" ->{
+                   startActivity(Intent(this, EnemiesOfWw::class.java))
+               }
+           }
+        }
+
+        when (card) {
             "card_cr" -> {
                 binding.biologicalOrganicControl.visibility = View.GONE
                 binding.contentBiologicalOrganicControl.visibility = View.GONE
-
                 binding.topBarText.text = "Common Rust"
                 binding.label.text = binding.topBarText.text
                 binding.sciCause.text = resources.getString(R.string.cause_cr)
@@ -123,8 +151,8 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
             }
 
 
-            "card_aw" -> {
-                binding.topBarText.text = "Army Worm"
+            "card_faw" -> {
+                binding.topBarText.text = "Fall armyworm"
                 binding.label.text = binding.topBarText.text
                 binding.sciCause.text = resources.getString(R.string.sci_name_aw)
                 binding.desc.text = resources.getString(R.string.desc_aw)
@@ -221,6 +249,8 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
                     R.drawable.wg3,
                     R.drawable.wg4,
                     R.drawable.wg5)
+
+                binding.showNaturalEnemyImgs.visibility = View.GONE
             }
             "card_ww" -> {
                 binding.topBarText.text = "Wireworm"
@@ -257,7 +287,7 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
             startActivity(i)
         }
 
-        binding.btnBack.setOnClickListener{
+        binding.btnBack.setOnClickListener {
             finish()
         }
     }
