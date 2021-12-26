@@ -7,9 +7,9 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.glennappdev.cornhealthai.settings.LocaleHelper
 import com.glennappdev.cornhealthai.R
 import com.glennappdev.cornhealthai.databinding.ActivityPredictionResultBinding
+import com.glennappdev.cornhealthai.settings.LocaleHelper
 
 class PredictionResult : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

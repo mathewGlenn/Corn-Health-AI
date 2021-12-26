@@ -96,4 +96,13 @@
     <string name="view_part_corn">
         Tingnan ang mga bahagi ng halamang mais
     </string>
+
+    <string name="disclaimer">
+        Disclaimer: Ang Corn Health AI ay kayang uriin ang 3 sakit sa dahon ng mais, partikular ang Gray Leaf Spot,
+        Northen Leaf Blight, at Common Rust at kayang uriin ang 6 pesteng insekto ng mais partikular ang Fall
+        armyworm, Corn borer, Corn aphid, Corn flea beetle, White grub, at wireworm. Sa kasalukuyan, hindi pa
+        kayang uriin ng mobile app na ito ang ibang peste ng mais maliban sa mga nabanggit. Responsibilidad ng
+        gumagamit ng app na ito na suriing maigi na ang mga katangian ng mga pesteng kinuhanan ng larawan ay
+        tugma sa mga larawan na nakasaad sa mobile app na ito.
+    </string>
 </resources>

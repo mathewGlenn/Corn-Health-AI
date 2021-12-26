@@ -109,7 +109,7 @@
                 android:layout_marginTop="5dp"
                 android:justificationMode="inter_word"
                 android:fontFamily="@font/roboto_regular"
-                android:text="@string/desc_pw"
+                android:id="@+id/desc_pw"
                 android:textColor="@color/text_black"
                 android:layout_marginHorizontal="10dp"
                 app:layout_constraintStart_toStartOf="@id/label"
@@ -132,7 +132,7 @@
                 android:layout_marginTop="5dp"
                 android:justificationMode="inter_word"
                 android:fontFamily="@font/roboto_regular"
-                android:text="@string/desc_pw"
+                android:id="@+id/benefit_pw"
                 android:textColor="@color/text_black"
                 android:layout_marginHorizontal="10dp"
                 app:layout_constraintStart_toStartOf="@id/label"
@@ -185,7 +185,7 @@
                 android:layout_marginTop="5dp"
                 android:justificationMode="inter_word"
                 android:fontFamily="@font/roboto_regular"
-                android:text="@string/desc_tw"
+                android:id="@+id/desc_tw"
                 android:textColor="@color/text_black"
                 android:layout_marginHorizontal="10dp" />
 
@@ -206,7 +206,7 @@
                 android:layout_marginTop="5dp"
                 android:justificationMode="inter_word"
                 android:fontFamily="@font/roboto_regular"
-                android:text="@string/benefit_tw"
+                android:id="@+id/benefit_tw"
                 android:textColor="@color/text_black"
                 android:layout_marginHorizontal="10dp" />
 

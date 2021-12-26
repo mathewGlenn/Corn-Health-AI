@@ -25,82 +25,98 @@
         Ang wireworms ay mayroon lamang kakaunting natural enemies, karamihan ay mga ground beetles at rove beetles na kumokonsumo ng mga wireworms. Ang larvae ng stiletto flies ay kilala din bilang predators ng wireworms.
     </string>
 
+
     <string name="desc_bw">
-        Small wasps with narrow waists, long antennae, and ant-like heads, usually less than ½ inch (1.2cm) long, with a long
-        black ovipositor extending from their rear ends. Black is the apparent color at first glance, but many species have orange or reddish abdomens. Braconid wasps do not sting.
-    </string>
-    <string name="benefit_bw">
-        Adults lay eggs on or in soft-bodied caterpillars including cabbage worms, tomato hornworms, and other garden pests. They are attracted by the smell of caterpillars
-        munching on plant leaves. The braconid larvae feed inside their living hosts, weakening or killing them. A female braconid wasp can lay up to 200 eggs a day in warm summer weather.
+        Ang mga maliliit na putakti ay may maikling baywang, mahabang antena, at mala-langgam ang ulo. karaniwang humigit-kumulang na 1/2 pulgada (1.2cm) haba, na mayroong
+	maitim na ovipositor extending sa kanilang likod na parte. Black ang kanilang kulay sa unang tingin, ngunit mayroong mga species na may Orange o mamula-mulang kalamnan. Ang Braconid Wasps ay hindi umaatake.
     </string>
 
+
+    <string name="benefit_bw">
+        Ang mga Adults ay nangingitlog sa kanilang soft-bodied caterpillars kabilang na ang mga Cabbage worms, toamato hornworms, at ibang mga peste sa hardin. Ito ay naaakit sa amoy ng mga caterpillars
+	na nagkokonsumo sa mga dahon nito. Ang Braconoid Larvae ay kumokonsumo sa loob ng kanilang hosts, pinapahina nito o kaya naman ay pinapatay. Ang babaeng Braconoid Wasp ay kayang mangitlog ng hanggan 200 sa isang araw
+	ng tag init na panahon.
+</string>
+
+
+
     <string name="desc_tf">
-        A tachinid fly is a small flying insect that resembles a house fly. Most kinds are less than ½ inch (1 cm.) in length.
-        They usually have a few hairs sticking up and pointing backward and are gray or black in color.
+       Ang Tachinid Fly ay isang maliit na insekto na katulad ng isang langaw. karaniwan sa mga ito ay tinatayang 1/2 pulgada (1cm) ang haba.
+	Ito ay may maliliit na buhok at may mga Gray or Black ang kulay nito.
+
+
     </string>
+
 
     <string name="benefit_tf">
 
-        Tachinid flies are beneficial because they kill pests.
-        Tachinidae can either lay eggs that a host will consume and later die, or adult flies will insert eggs directly into the host bodies.
-        As the larva develops inside the host, it eventually kills the insect it is living inside. Each species has their own preferred method,
-        but most choose caterpillars or beetles as hosts.
+       Ang tachinid flies ay kapaki-pakinabang dahil pumapatay ito ng mga insekto.
+	Ang Tachinid ay pwedeng mangitlog sa kanilang host na kakainin nito hanggang sa mamatay o kaya naman ay ang adult flies ay mangingitlog sa mismong host bodies.
+	Sa pag develop ng mga larvae sa loob ng hosts, ay unti-unti nitong pinapatay ang kanilang mga hosts. Bawat species ay mayroong kaniya-kaniyang mga paraan,
+	ngunit ang pinaka common ay ang mga Caterpillars or bettles bilang mga hosts.
 
     </string>
 
     <string name="desc_lbb">
-       Adult lady beetles are small, round to oval, and dome-shaped. The most well known have black markings on red, orange, or yellow forewings,
-        but some are black. The area immediately behind the head, the pronotum, may also have a distinctive pattern. The color and pattern of markings
-        for each species may vary, but can aid identification.
+       Maliliit ang mga Lady Beetles, round to oval, at dome-shaped. Ang pinaka kilala rito ay may black markings sa pula o dilaw na forewings,
+	ngunit karaniwan ay black. Mayroon ding pagkakakilanlan sa pattern sa may bandang likuran ng ulo nito. ang kulay at pattern
+	sa bawat species ay maaring mag-iba, ngunit madaki naman itong makilala.
+
     </string>
 
+
     <string name="benefit_lbb">
-Most lady beetles found on crops and in gardens are aphid predators. Some species prefer only certain aphid species while others will attack many
-        aphid species on a variety of crops. Some prefer mite or scale species. If aphids are scarce, lady beetle adults and larvae may feed on the eggs of moths and beetles,
-        and mites, thrips, and other small insects, as well as pollen and nectar. They may also be cannibalistic. Because of their ability to survive on other prey when aphids are
-        in short supply, lady beetles are particularly valuable natural enemies.
+Karamihan sa mga Lady Beetles na matatagpuan sa mga pananim at hardin ay mga Aphid Predators. Ilan sa mga species nito ay Aphids lang, sa kabilang banda ay inaatake
+	ang karamihan sa mga iba\'t-ibang uri ng mga pananim. Kung ang aphids ay kakaunti, ang lady beetle adults at ang larvae nito ay maaring konsumuhin ang mga itlog ng moths at beetles,
+	at mites, thrips, at ang ibang mga maliliit na insekto, pati na rin ang Pollen at Nectar. Maaarng ito ay maging Cannibalistic. Dahil sa kakayanan nitong maka survive sa ibang mga biktima, ang aphids ay
+	nasa maliit na supply, ang lady beetles ay importante bilang mga natural enemies.
+
     </string>
 
     <string name="desc_pw">
-        Parasitic wasps are tiny wasps that are very beneficial to gardeners and farmers. They attack, paralyze and kill many kinds of insect pests. Adults are varied in their coloring, but larvae are usually cream colored.
-        Parasitic wasps are very prolific and can reproduce quickly, allowing for large populations which are very helpful in controlling insect pest infestations.
+         Ang parasitic wasp ay maliliit at ang mga ito ay nakakatulong sa mga magsasaka. Inaatake, pina-paralize at pinapatay nito ang iba\'t-ibang uri ng mga insekto. Ang adults ay iba-iba ang kanilang kulay, ngunit ang larvae ay karaniwang cream-colored.
+	 Ang parasitic wasp kayang magpadami ng napakabilis, na kung saan ang mga ito ay nakakatulong sa pag kontrol ng mga pagdami ng insekto.
 
     </string>
 
     <string name="benefit_pw">
-        These tiny, delicate insects feast on aphids, caterpillars, beetles, scale, and flies.
-        Parasitic wasps deposit their eggs inside an adult or larval insect and when the eggs hatch,
-        the offspring will feed on the paralyzed host insect resulting in the host\'s death (if it did not die when it was paralyzed by the wasp).
+        Ang mga maliliit na insektong ito ay kumakain ng mga Aphids, caterpillar, beetles, scale and flies. Ang Parasitic wasp ay nangingitlog sa loob ng katawan ng isang adult o larval insect, at kapag ang mga itlog nito ay napisa, kinakain nila ang kanilang paralyzed host na nagreresulta ng pagkamaty ng host.
+(kung ito ay hindi namatay kapag naparalyzed ng mga wasp).
+
     </string>
 
     <string name="desc_tw">
-        Trichogramma wasps are tiny parasites that attack the eggs of over 200 species of moths and caterpillars. They are extremely small - 4 or 5 will fit on the head of a pin.
+        Ang Trichogramma wasps ay maliliit na parasito na umaatake sa mga itlog ng humigit 200 species ng moths at caterpillars. Ang mga ito ay sobrang maliliit na kung saan 4 hanggang 5 ay pwedeng magkasya sa dulo ng pin.
+
     </string>
+
 
     <string name="benefit_tw">
-        Trichogramma lays its eggs inside the eggs of moths preventing the moth egg from hatching into a caterpillar. This prevents the damage caused by the feeding caterpillars,
-        and also breaks the life cycle of the pest, effectively preventing the pest from reproducing. In some species of moth up to 5 parasite eggs may be laid in each moth egg.
-        As the parasite develops within the egg, it turns black, and after about 10 days, an adult Trichogramma emerges. Adult Trichogramma can live up to 14 days after emergence.
+	Ang Trichogramma ay nangingitlog sa loob itlog ng mga moths na nagdudulot ng hindi pagkapisa nito sa isang caterpillar. Sa pamamagitan nito ay maiiwasan ang pinsala na dulot ng mga uod, at tinatapos nito ang cycle ng insekto na puimigil sa pagdami ng populasyon nito. Sa mga ibang species ng moths ay umaabot ng 5 parasite eggs ang maaring makapasok sa bawat itlog ng mga Moths.
+	Sa pag develop ng parasite sa loob ng itlog, ay nagiging kulay itim ito at pagkatapos ng 10 araw, ay kasabay na nito ang pagsibol ng Trichogramma. Ang Trichogramma ay maaaring mabuhay ng 14 na araw pagkatapos ng kanilang paglitaw.
+
     </string>
+
 
     <string name="desc_rb">
-        Rove beetles are members of the Staphylinidae family, which contains thousands of North American species. They range in length, though are typically about an inch (2.5 cm.) long.
-        Rove beetles have the interesting habit of raising up the end of their bodies like a scorpion when disturbed or frightened, but they can’t sting or bite (they do, however, produce pederin,
-        a toxin which can cause contact dermatitis if handled). Although they have wings and can fly, they usually prefer to run along the ground.
+       Ang Rove beetles ay may kakaibang habit ng pagtaas ng kanilang katawan na parang scorpion kapag nabulabog , ngunit hindi sila nangangagat o nag-sting (gingagwa nila ito, ngunit, sila ay nagpo-produce ng pederin, isang klase ng toxin na kung saan ang kontak nito ay maaring magresulta ng dermatitis kung nahawakan.) Bagaman ay may mga pakpak ang mga ito at karaniwang ginagamit nila  ang mga to sa pagtakbo sa lupa.
+
     </string>
 
+
     <string name="benefit_rb">
-        Rove beetles feed on other insects and sometimes on rotting vegetation. Rove beetles in gardens feed on small insects and mites that infest plants, as well insects in the soil and on plant roots.
-        Both the immature larvae and the adult beetles prey on other insects.
+       Ang Rove Beetles ay kumakain ng ibat-ibang mga insekto at kung minsan ay sa mga nabubulok na mga pananim. Ang mga ito din ay kumakain ng sa mga taniman na may maliliit na insekto at mites na sumisira sa mga pananim, pati na rin ang mga nasa insekto sa lupa at insekto na nasa ugat ng mga pananim
+Ang Immature Larvae at mga adult beetles ay parehong umaatake ng ibang mga insekto.
+
     </string>
 
     <string name="desc_gb">
-        The ground beetle is a shiny hard-shelled insect about ⅛ to 1½ inches long. Most ground beetles are dark colored, black or bronze, but some are metallic green, blue, gold, or red.
-        They have a narrow head with threadlike antennae and sometimes can be mistake for cockroaches. Larvae are dark brown or black grubs with 10 segments tapering toward the rear.
+        Ang Ground Beetle ay isang makintab na hard-shelled insect na kung saan umaabot ito ng 1 1/2 na pulgada. karamihan sa mga ground beetles are dark-colored, black o bronze, ngunit kalimitan ay metallic green, blue, gold o kaya ay red.
+
     </string>
 
     <string name="benefit_gb">
-        The nocturnal ground beetle is a voracious predator of slugs, snails, wireworms, cutworms, cabbage maggots, and other pests that live in the soil.
-        One beetle larva alone can eat more than 50 caterpillars.
+Ang Nocturnal Ground Beetlee ay isang predator ng mga slugs, snails, wireworms, cutworms, cabbage maggots at iba pang mga peste na nakatira sa mga lupa.
+Ang isang Beetle Larva ay kayang umubos ng humigit sa 50 na caterpillars.
     </string>
 </resources>

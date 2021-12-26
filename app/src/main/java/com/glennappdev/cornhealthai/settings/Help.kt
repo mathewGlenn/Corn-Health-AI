@@ -28,5 +28,7 @@ class Help : AppCompatActivity() {
         binding.step2.text = resources.getString(R.string.step2)
         binding.step3.text = resources.getString(R.string.step3)
         binding.step4.text = resources.getString(R.string.step4)
+
+        binding.disclaimer.text = resources.getString(R.string.disclaimer)
     }
 }

@@ -95,4 +95,11 @@
         View parts of corn plant
     </string>
 
+    <string name="disclaimer">
+        Disclaimer: Corn Health AI is able to classify between 3 leaf diseases of corn, namely Gray Leaf Spot, Northern Leaf Blight,
+        and Common Rust and between 6 insect pest of corn, namely Fall armyworm, Corn borer, Corn aphids, Corn flea beetle,
+        White grub, and Wireworm. Currently, this mobile app is not able to distinguish other pests aside from the aforementioned. It is the user\'s
+        responsibility to carefully check that the descriptions of the captured pests match that of what this mobile app predicted.
+    </string>
+
 </resources>

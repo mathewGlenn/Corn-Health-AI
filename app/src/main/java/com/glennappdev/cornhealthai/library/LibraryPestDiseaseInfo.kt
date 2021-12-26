@@ -101,6 +101,8 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
                     R.drawable.cr2,
                     R.drawable.cr3,
                     R.drawable.cr4)
+
+                binding.showNaturalEnemyImgs.visibility = View.GONE
             }
 
             "card_gls" -> {
@@ -125,6 +127,8 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
                     R.drawable.gls3,
                     R.drawable.gls4,
                     R.drawable.gls5)
+
+                binding.showNaturalEnemyImgs.visibility = View.GONE
             }
 
             "card_nlb" -> {
@@ -148,6 +152,8 @@ class LibraryPestDiseaseInfo : AppCompatActivity() {
                     R.drawable.nlb2,
                     R.drawable.nlb3,
                     R.drawable.nlb4)
+
+                binding.showNaturalEnemyImgs.visibility = View.GONE
             }
 
 

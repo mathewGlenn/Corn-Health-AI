@@ -307,6 +307,8 @@
                         android:text="@string/lorem_short"
                         android:textColor="@color/text_black" />
 
+
+                    <!-- Organic control -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -314,10 +316,12 @@
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/montserrat_medium"
                         android:text="Organic Control"
+                        android:visibility="gone"
                         android:textColor="@color/text_black"
                         android:textSize="20sp" />
 
                     <TextView
+                        android:visibility="gone"
                         android:id="@+id/organic_control"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
